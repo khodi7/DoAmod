@@ -32,7 +32,7 @@ nation_rank_1 = {
 	diplomatic_relations = 1
 	num_of_clan_chiefs = 1
 	integrate_speed = 0.05
-	control_range_modifier = 0.05
+	control_range_modifier = 0.05	#Added
 }
 
 nation_rank_2 = {
@@ -40,7 +40,7 @@ nation_rank_2 = {
 	diplomatic_range_modifier = 0.10
 	num_of_clan_chiefs = 1
 	integrate_speed = 0.1
-	control_range_modifier = 0.1 	
+	control_range_modifier = 0.1	#Added
 	##	naval_range = 0.05
 }
 
@@ -53,7 +53,7 @@ nation_rank_3 = {
 	monthly_political_influence_modifier = 0.25
 	civil_war_threshold = -0.03
 	rebellion_threshold = -0.01
-	control_range_modifier = 0.15 	
+	control_range_modifier = 0.15	#Added 	
 	##	naval_range = 0.05
 }
 
@@ -70,7 +70,7 @@ nation_rank_4 = {
 	monthly_political_influence_modifier = 0.5
 	civil_war_threshold = -0.05
 	rebellion_threshold = -0.03
-	control_range_modifier = 0.2
+	control_range_modifier = 0.2	#Added
 	##	naval_range = 0.05
 }
 
@@ -88,7 +88,7 @@ nation_rank_5 = {
 	monthly_political_influence_modifier = 0.75
 	civil_war_threshold = -0.08
 	rebellion_threshold = -0.05
-	control_range_modifier = 0.25
+	control_range_modifier = 0.25	#Added
 	##	naval_range = 0.05
 }
 
