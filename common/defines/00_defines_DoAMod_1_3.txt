@@ -7,7 +7,7 @@
 
 NCountry = {
 
-	BASE_CONTROL_RANGE = 650
+	BASE_CONTROL_RANGE = 1000 #Edited
 	BASE_NAVAL_RANGE = 650
 
 }
