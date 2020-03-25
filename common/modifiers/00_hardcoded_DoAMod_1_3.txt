@@ -1,0 +1,93 @@
+﻿####VANILLA INSTRUCTIONS####
+
+# All global modifiers are here.  They are applied from certain game-features.
+#
+# Effects are fully scriptable here.
+
+
+#these names can NOT be removed or changes, as the code uses them....
+
+####MOD CHANGES####
+
+#Belongs in Mod\common\modifiers
+
+##########################################################################
+# Country Static Modifiers
+##########################################################################
+
+##Diplomatic Range Modifiers by Rank - Change as desired. Currently unchanged until values agreed. 
+##Note All the modifiers for nation ranks have to be kept because this file overwrites the vanilla nation ranks. 
+
+
+nation_rank_0 = {
+	global_manpower = 1
+	num_of_clan_chiefs = 1
+	army_weight_modifier = -0.25
+}
+
+
+nation_rank_1 = {
+	global_commerce_modifier = 0.2	
+	global_defensive = 0.2
+	diplomatic_relations = 1
+	num_of_clan_chiefs = 1
+	integrate_speed = 0.05
+}
+
+nation_rank_2 = {
+	diplomatic_relations = 2
+	diplomatic_range_modifier = 0.10
+	num_of_clan_chiefs = 1
+	integrate_speed = 0.1
+	##control_range_modifier = 0.15 	#Change as wanted, don't forget remove comment tags
+	##	naval_range = 0.05
+}
+
+nation_rank_3 = {
+	diplomatic_relations = 3
+	global_capital_trade_routes = 1
+	diplomatic_range_modifier = 0.5
+	num_of_clan_chiefs = 2
+	integrate_speed = 0.15
+	monthly_political_influence_modifier = 0.25
+	civil_war_threshold = -0.03
+	rebellion_threshold = -0.01
+	##control_range_modifier = 0.15 	#Change as wanted
+	##	naval_range = 0.05
+}
+
+nation_rank_4 = {
+	diplomatic_relations = 4
+	global_capital_trade_routes = 2
+	diplomatic_range_modifier = 1.25
+	num_of_clan_chiefs = 3
+	change_governor_policy_cost_modifier = -0.1
+	monthly_general_loyalty = -0.01
+	monthly_admiral_loyalty = -0.01
+	monthly_governor_loyalty = -0.01
+	integrate_speed = 0.2
+	monthly_political_influence_modifier = 0.5
+	civil_war_threshold = -0.05
+	rebellion_threshold = -0.03
+	##control_range_modifier = 0.15 	#Change as wanted
+	##	naval_range = 0.05
+}
+
+
+nation_rank_5 = {
+	diplomatic_relations = 5
+	global_capital_trade_routes = 2
+	diplomatic_range_modifier = 2.25
+	num_of_clan_chiefs = 3
+	change_governor_policy_cost_modifier = -0.3
+	monthly_general_loyalty = -0.02
+	monthly_admiral_loyalty = -0.02
+	monthly_governor_loyalty = -0.02
+	integrate_speed = 0.25
+	monthly_political_influence_modifier = 0.75
+	civil_war_threshold = -0.08
+	rebellion_threshold = -0.05
+	##control_range_modifier = 0.15 	#Change as wanted
+	##	naval_range = 0.05
+}
+

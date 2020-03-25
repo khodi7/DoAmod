@@ -1,0 +1,19 @@
+﻿####MOD CHANGES####
+
+#Belongs in Mod\common\defines
+
+##Currently Unchanged until value agreed. 
+
+
+NCountry = {
+
+	BASE_CONTROL_RANGE = 650
+	BASE_NAVAL_RANGE = 650
+
+}
+
+NDiplomacy = {
+
+	DIPLOMATIC_RANGE = 800
+	
+}
