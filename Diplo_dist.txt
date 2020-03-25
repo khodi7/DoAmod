@@ -1,0 +1,6 @@
+The capital of the country this measures were taken from an OPM in the territory of Koti, close to the southern tip of India.
+To measure the diplomatic distance between two provinces, I release the target province from its owner and refernece it by its name (and not the name of the country created).
+
+Babylon: 3584.64
+East Omana: 2203.56
+Qatabe(eastern part of the strait between the Red sea and the Indian ocean): 3229.49
