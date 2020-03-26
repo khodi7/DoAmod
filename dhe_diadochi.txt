@@ -1,0 +1,437 @@
+﻿namespace = diadochi_flavor
+
+
+diadochi_flavor.7 = { #Capital for the Empire
+	type = country_event
+	title = "diadochi_flavor.7.t"
+	desc = "diadochi_flavor.7.desc"
+	
+	left_portrait = root.current_ruler
+	
+	picture = great_city
+
+	option = {
+		name = diadochi_flavor.7.a #Pella
+		trigger = {
+			owns = 379
+		}
+		if = {
+			limit = {
+				NOT = { p:379 = { is_capital = no } }
+			}
+			set_capital = 379
+			hidden_effect = { p:379.state = { set_state_capital = 379 } }
+			capital_scope = {
+				establish_city_effect = yes
+			}
+		}
+		p:379 = {
+			add_province_modifier = {
+				name = "re_united_argead_empire_pella_capital_modifier"
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = diadochi_flavor.7.b #Alexandria on the Nile
+		trigger = {
+			owns = 516
+		}
+		if = {
+			limit = {
+				NOT = { p:516 = { is_capital = no } }
+			}
+			set_capital = 516
+			hidden_effect = { p:516.state = { set_state_capital = 379 } }
+			capital_scope = {
+				establish_city_effect = yes
+			}
+		}
+		p:516 = {
+			add_province_modifier = {
+				name = "re_united_argead_empire_egypt_capital_modifier"
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = diadochi_flavor.7.c #Babylon
+		trigger = {
+			owns = 918
+		}
+		if = {
+			limit = {
+				NOT = { p:918 = { is_capital = no } }
+			}
+			set_capital = 918
+			hidden_effect = { p:918.state = { set_state_capital = 918 } }
+			capital_scope = {
+				establish_city_effect = yes
+			}
+		}
+		p:918 = {
+			add_province_modifier = {
+				name = "re_united_argead_empire_babylon_capital_modifier"
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = diadochi_flavor.7.d #Alexandria on the Indus
+		trigger = {
+			owns = 4371
+		}
+		if = {
+			limit = {
+				NOT = { p:4371 = { is_capital = no } }
+			}
+			set_capital = 4371
+			hidden_effect = { p:4371.state = { set_state_capital = 4371 } }
+			capital_scope = {
+				establish_city_effect = yes
+			}
+		}
+		p:4371 = {
+			add_province_modifier = {
+				name = "re_united_argead_empire_indus_capital_modifier"
+				duration = -1
+			}
+		}
+		custom_tooltip = claims_on_trans_indus_tooltip
+		hidden_effect = {
+			every_province = {
+				limit = {
+					is_in_region = madhyadesa_region
+					NOT = { 
+						owned_or_subject_owned = ROOT
+					}
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	option = {
+		name = diadochi_flavor.7.e #Keep my own
+		trigger = { #Forced to keep the one you already have if one of these is your capital
+			p:516 = { is_capital = no } #Alexandria on the Nile
+			p:379 = { is_capital = no } #Pella
+			p:4371 = { is_capital = no } #Alexandria Indus
+			p:918 = { is_capital = no } #Babylon
+		}
+		capital_scope = {
+			add_province_modifier = {
+				name = "re_united_argead_empire_dynastic_capital_modifier"
+				duration = -1
+			}
+		}
+	}
+
+}
+
+
+#Coronation of Antigonos and Demetrios
+diadochi_flavor.10 = { 
+    type = country_event
+    title = diadochi_flavor.10.t
+    desc = diadochi_flavor.10.desc
+    picture = throneroom
+    
+    left_portrait = current_ruler
+    right_portrait = current_heir
+
+    trigger = {
+    	tag = PRY
+    }
+
+    immediate = {
+    	current_ruler = {
+    		add_popularity = popularity_medium
+    	}
+    	current_heir = {
+    		add_popularity = popularity_large
+    	}
+    }
+
+    option = {      
+        name = diadochi_flavor.10.a
+        ai_chance = {
+			factor = 90
+		}
+        add_country_modifier = {
+        	name = dhe_antigonid_coronation_country_modifier
+        	duration = 3650
+        }
+        C:EGY = {
+        	add_opinion = {
+        		modifier = dhe_diadochi_insulted
+        		target = PRY
+        	}
+        }
+        C:SYR = {
+        	add_opinion = {
+        		modifier = dhe_diadochi_insulted
+        		target = PRY
+        	}
+        }
+        C:SEL = {
+            add_opinion = {
+        		modifier = dhe_diadochi_insulted
+        		target = PRY
+        	}
+        }
+        C:TRE = {
+        	add_opinion = {
+				modifier = dhe_diadochi_insulted
+				target = PRY
+			}
+        }
+        hidden_effect = {
+        	C:EGY = { 
+	        	trigger_event = {
+	        		id = diadochi_flavor.11
+	        		days = { 10 20 }
+	        	}
+	        }
+	        C:SYR = { 
+	        	trigger_event = {
+	        		id = diadochi_flavor.12
+	        		days = { 10 20 }
+	        	}
+	        }
+	        C:SEL = { 
+	        	trigger_event = {
+	        		id = diadochi_flavor.13
+	        		days = { 10 20 }
+	        	}
+	        }
+	        C:TRE = { 
+	        	trigger_event = {
+	        		id = diadochi_flavor.14
+	        		days = { 10 20}
+	        	}
+	        }
+        }
+    }
+
+    option = {      
+        name = diadochi_flavor.10.b
+        ai_chance = {
+			factor = 10
+		}
+        add_country_modifier = {
+        	name = dhe_salamis_victory_country_modifier
+        	duration = 3650
+        }
+        current_heir = {
+        	add_loyalty = subtract_loyalty_large
+        }
+		C:EGY = {
+        	add_opinion = {
+        		modifier = dhe_diadochi_appeased
+        		target = PRY
+        	}
+        }
+        C:MAC = {
+        	add_opinion = {
+        		modifier = dhe_diadochi_appeased
+        		target = PRY
+        	}
+        }
+        C:SEL = {
+            add_opinion = {
+        		modifier = dhe_diadochi_appeased
+        		target = PRY
+        	}
+        }
+        C:TRE = {
+        	add_opinion = {
+				modifier = dhe_diadochi_appeased
+				target = PRY
+			}
+        }
+    }
+}
+
+#Egypt Coronation
+diadochi_flavor.11 = {
+    type = country_event
+    title = diadochi_flavor.11.t
+    desc = diadochi_flavor.11.desc
+    picture = greek_court
+    
+    left_portrait = current_ruler
+    right_portrait = C:PRY.current_ruler
+    right_portrait = C:PRY.current_heir
+
+    trigger = {
+    	tag = EGY
+    }
+
+    immediate = {
+    	current_ruler = {
+    		add_popularity = popularity_medium
+    	}
+    }
+
+    option = {      
+        name = diadochi_flavor.11.a
+        ai_chance = {
+			factor = 90
+		}
+        add_country_modifier = {
+        	name = dhe_king_of_egypt_country_modifier
+        	duration = 3650
+        }
+
+    }
+    option = {      
+        name = diadochi_flavor.11.b
+        ai_chance = {
+			factor = 10
+		}
+        current_ruler = {
+			add_nickname = NICKNAME_NAUTARCHOS
+		}
+        add_country_modifier = {
+        	name = dhe_nautarchos_country_modifier
+        	duration = 3650
+        }
+    }
+}
+
+#Syracuse Nickname
+diadochi_flavor.12 = {
+    type = country_event
+    title = diadochi_flavor.12.t
+    desc = diadochi_flavor.12.desc
+    picture = greek_court
+    
+    left_portrait = current_ruler
+    right_portrait = C:PRY.current_ruler
+    right_portrait = C:PRY.current_heir
+
+    trigger = {
+    	tag = SYR
+    }
+
+    immediate = {
+    	current_ruler = {
+    		add_popularity = popularity_medium
+    	}
+    }
+
+    option = {      
+        name = diadochi_flavor.12.a
+        ai_chance = {
+			factor = 90
+		}
+        add_country_modifier = {
+        	name = dhe_king_of_sicily_country_modifier
+        	duration = 3650
+        }
+    }
+    option = {      
+        name = diadochi_flavor.12.b
+        ai_chance = {
+			factor = 10
+		}
+        current_ruler = {
+			add_nickname = NICKNAME_NESIARCHOS
+		}
+        add_country_modifier = {
+        	name = dhe_nesiarchos_country_modifier
+        	duration = 3650
+        }
+    }
+}
+
+#Seleukid Coronation
+diadochi_flavor.13 = {
+    type = country_event
+    title = diadochi_flavor.13.t
+    desc = diadochi_flavor.13.desc
+    picture = greek_court
+    
+    left_portrait = current_ruler
+    right_portrait = C:PRY.current_ruler
+    right_portrait = C:PRY.current_heir
+
+    trigger = {
+    	tag = SEL
+    }
+
+    immediate = {
+    	current_ruler = {
+    		add_popularity = popularity_medium
+    	}
+    }
+
+    option = {      
+        name = diadochi_flavor.13.a
+        ai_chance = {
+			factor = 90
+		}
+        add_country_modifier = {
+        	name = dhe_king_of_persia_country_modifier
+        	duration = 3650
+        }
+    }
+    option = {      
+        name = diadochi_flavor.13.b
+        ai_chance = {
+			factor = 10
+		}
+        current_ruler = {
+			add_nickname = NICKNAME_ELEPHANTARCHOS
+		}
+        add_country_modifier = {
+        	name = dhe_elephantarchos_country_modifier
+        	duration = 3650
+        }
+    }
+}
+
+#Thrace Coronation
+diadochi_flavor.14 = {
+    type = country_event
+    title = diadochi_flavor.14.t
+    desc = diadochi_flavor.14.desc
+    picture = greek_court
+    
+    left_portrait = current_ruler
+    right_portrait = C:PRY.current_ruler
+    right_portrait = C:PRY.current_heir
+
+    trigger = {
+    	tag = TRE
+    }
+
+    option = {      
+        name = diadochi_flavor.14.a
+        ai_chance = {
+			factor = 90
+		}
+        add_country_modifier = {
+        	name = dhe_king_of_thrace_country_modifier
+        	duration = 3650
+        }
+        current_ruler = {
+    		add_popularity = subtract_popularity_medium
+    	}
+    }
+    option = {      
+        name = diadochi_flavor.14.b
+        ai_chance = {
+			factor = 10
+		}
+        add_country_modifier = {
+        	name = dhe_gazophylax_modifier
+        	duration = 3650
+        }
+        current_ruler = {
+    		add_popularity = popularity_medium
+    		add_nickname = NICKNAME_GAZOPHYLAX
+    	}
+    }
+}
