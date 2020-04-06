@@ -7015,6 +7015,17 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 416
+			
+			pantheon = { 
+			
+			{ deity = 164 }
+			{ deity = 165 }
+			{ deity = 105 }
+			{ deity = 167 }
+			
+			}
+			
+			treasures = { 55 79 }
 		
 			own_control_core =  {
 			270 297 413 416 7799 7902 7897 7898
@@ -7028,6 +7039,17 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 427
+			
+			pantheon = { 
+			
+			{ deity = 163 }
+			{ deity = 160 }
+			{ deity = 162 }
+			{ deity = 161 }
+			
+			}
+			
+			treasures = { 88 }
 		
 			own_control_core =  {
 			427 429 430 450 471 7889
@@ -7041,6 +7063,21 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 476
+			
+			pantheon = { 
+			
+			{ deity = 102 }
+			{ deity = 107 }
+			{ deity = 110 }
+			{ deity = 116 }
+			
+			}
+
+			historical_regnal_numbers = {
+				Neoptolemos = 2	
+				Alexandros = 1
+				Aiakides = 1
+			}
 		
 			own_control_core =  {
 			419 421 425 464 465 467 474 476
@@ -7176,6 +7213,15 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 440
+			
+			pantheon = { 
+			
+			{ deity = 103 }
+			{ deity = 112 }
+			{ deity = 113 }
+			{ deity = 116 }
+			
+			}
 		
 			own_control_core =  {
 			440 7892 7891
@@ -7202,10 +7248,21 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 446
+			
+			pantheon = { 
+			
+			{ deity = 102 }
+			{ deity = 104 }
+			{ deity = 110 }
+			{ deity = 116 }
+			
+			}
 		
 			own_control_core =  {
 			439 446
 			}
+			
+			treasures = { 113 115 }
 		}
 		
 	
@@ -7246,6 +7303,15 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 441
+			
+			pantheon = { 
+			
+			{ deity = 103 }
+			{ deity = 107 }
+			{ deity = 106 }
+			{ deity = 116 }
+			
+			}
 		
 			own_control_core =  {
 			441
@@ -7280,11 +7346,37 @@ country = {
 		
 	
 		MAC = {
+			family = 22
+			family = 23
 			government = aristocratic_monarchy
 			primary_culture = macedonian
 			religion = roman_pantheon
-		
+			diplomatic_stance=warmongering_stance
 			capital = 379
+			
+			pantheon = { 
+			
+			{ deity = 102 }
+			{ deity = 112 }
+			{ deity = 110 }
+			{ deity = 108 }
+			
+			}
+
+			treasures = { 62 90 91 104 }
+			
+			historical_regnal_numbers = {
+				Perdikkas = 3
+				Alexandros = 3
+				Philippos = 3
+				Amyntas = 3
+				Aeropos = 2
+				Krateros = 1
+				Orestes = 1
+				Archelaos = 2
+				Pausanias = 1
+				Antipatros = 1
+			}
 		
 			own_control_core =  {
 			369 371 373 379 380 381 382 383 384 385 386 428
@@ -7311,6 +7403,17 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 417
+			
+			pantheon = { 
+			
+			{ deity = 103 }
+			{ deity = 104 }
+			{ deity = 105 }
+			{ deity = 116 }
+			
+			}
+			
+			treasures = { 54 111 119 }
 		
 			own_control_core =  {
 			417
@@ -7324,6 +7427,15 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 426
+			
+			pantheon = {
+			
+			{ deity = 103 }
+			{ deity = 112 }
+			{ deity = 110 }
+			{ deity = 117 }
+			
+			}
 		
 			own_control_core =  {
 			426
@@ -7350,6 +7462,17 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 423
+			
+			pantheon = { 
+			
+			{ deity = 103 }
+			{ deity = 112 }
+			{ deity = 110 }
+			{ deity = 150 }
+			
+			}
+			
+			treasures = { 56 57 87 }
 		
 			own_control_core =  {
 			399 402 406 423 424 458 468 475 7798 7896
@@ -7363,6 +7486,15 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 1835
+			
+			pantheon = { 
+			
+			{ deity = 103 }
+			{ deity = 104 }
+			{ deity = 113 }
+			{ deity = 117 }
+			
+			}
 		
 			own_control_core =  {
 			263 375 387 437 443 454 472 1835 1915 1964 7905
@@ -7397,11 +7529,21 @@ country = {
 		
 	
 		MLO = {
+			family = 49
 			government = democratic_republic
 			primary_culture = ionian
 			religion = roman_pantheon
-		
-			capital = 1973
+			diplomatic_stance=trading_stance
+			capital = 1973 #Miletos
+			
+			pantheon = { 
+			
+			{ deity = 103 }
+			{ deity = 112 }
+			{ deity = 105 }
+			{ deity = 116 }
+			
+			}
 		
 			own_control_core =  {
 			1973
@@ -7423,11 +7565,23 @@ country = {
 		
 	
 		ION = {
+			family = 43
 			government = democratic_republic
 			primary_culture = ionian
 			religion = roman_pantheon
-		
-			capital = 290
+			diplomatic_stance=trading_stance
+			capital = 290 #Ephesos
+			
+			pantheon = { 
+			
+			{ deity = 103 }
+			{ deity = 104 }
+			{ deity = 113 }
+			{ deity = 114 }
+			
+			}
+
+			treasures = { 65 }
 		
 			own_control_core =  {
 			286 287 288 289 290 291 310 1968 1969 1972 1974
@@ -7439,8 +7593,19 @@ country = {
 			government = plutocratic_republic
 			primary_culture = ionian
 			religion = roman_pantheon
-		
+			diplomatic_stance=trading_stance
 			capital = 1987
+			
+			pantheon = { 
+			
+			{ deity = 102 }
+			{ deity = 104 }
+			{ deity = 105 }
+			{ deity = 108 }
+			
+			}
+			
+			treasures = { 78 }
 		
 			own_control_core =  {
 			1987
@@ -7883,6 +8048,15 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 350
+			
+			pantheon = {
+				{ deity = 110 }
+				{ deity = 102 }
+				{ deity = 651 }
+				{ deity = 117 }
+			}
+
+			treasures = { 120 }
 		
 			own_control_core =  {
 			342 343 346 347 348 349 350 352 353 354 480 481 482 489 495 4154 4314
@@ -7909,19 +8083,41 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 790
+			
+			pantheon = {
+				{ deity = 110 }
+				{ deity = 353 }
+				{ deity = 102 }
+				{ deity = 104 }
+			}
+			
+			treasures = { 193 95 }
 		
 			own_control_core =  {
 			156 162 164 165 330 331 332 333 334 335 336 338 407 442 788 789 790 792 793 1871 1874 1904 6431 6433
-			}
+			}	
 		}
 		
 	
 		RHO = {
+			family = 48
 			government = plutocratic_republic
 			primary_culture = aegean
 			religion = roman_pantheon
+			diplomatic_stance=trading_stance
+			capital = 266 #Rhodes
 		
 			capital = 266
+			
+			pantheon = { 
+			
+			{ deity = 103 }
+			{ deity = 104 }
+			{ deity = 115 }
+			{ deity = 116 }
+			
+			}
+
 		
 			own_control_core =  {
 			266 280 1985 1989 1992
@@ -7961,6 +8157,17 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 1799
+			
+			historical_regnal_numbers = {
+				Ariarathes = 1
+			}
+			
+			pantheon = {
+				{ deity = 375 } # Ma
+				{ deity = 301 } # Sraosha
+				{ deity = 352 } # Men
+				{ deity = 353 } # Cybele
+			}
 		
 			own_control_core =  {
 			155 172 173 205 1794 1796 1799 1800 1802 1803 1805 1813 1817 1818 1849 1888 1891 1893 1899 1900 1902 1912 1913 1938 1940 1951 1954 1976 1978 1979 1982 1983 1994 1999 6420
@@ -8000,6 +8207,15 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 911
+			
+			pantheon = {
+				{ deity = 756 }
+				{ deity = 755 }
+				{ deity = 103 }
+				{ deity = 117 }
+			}
+
+			treasures = { 102 }
 		
 			own_control_core =  {
 			896 898 899 911 912 913 914 916 924 926 927 933 934 938 940 941 942 943 944 961 962 964 965 969 971 973
@@ -8039,6 +8255,15 @@ country = {
 			religion = zoroaster
 		
 			capital = 1515
+			
+			pantheon = {
+				{ deity = 307 } # Atar
+				{ deity = 301 } # Sraosha 
+				{ deity = 302 } # Zoroaster
+				{ deity = 303 } # Tishtrya
+			}
+			
+			treasures = { 192 }
 		
 			own_control_core =  {
 			1505 1506 1507 1508 1509 1510 1511 1512 1513 1514 1515 1516 1517 1518 1519 1520 1521 1522 1523 1524 1525 1526 1552 1553 1554 1555 1556 1557 1558 1565 1574 1593 1618 1619 1620 1621 1622 1624 1625 1626 1627 1628 1629 1630 1631 1632 1638 1648 1649 1652 1654 3383 3384 3386 3387 3388 3390 4965 4990 6958 6964
@@ -8104,6 +8329,15 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 6678
+			
+			pantheon = {
+				{ deity = 102 }
+				{ deity = 111 }
+				{ deity = 116 }
+				{ deity = 107 }
+			}
+
+			treasures = { 82 }
 		
 			own_control_core =  {
 			6649 6651 6677 6678 6679 6680 6681 6686 6688 6691 6692 6693 6694 6695 6696 6697 6698 6759
@@ -8143,6 +8377,15 @@ country = {
 			religion = judaism
 		
 			capital = 687
+			
+			pantheon = {
+			
+				{ deity = 907 }
+				{ deity = 902 } 
+				{ deity = 905 } 
+				{ deity = 909 }
+			
+			}
 		
 			own_control_core =  {
 			681 683 684 685 686 687 688 689 691 692 710 711 712 713 714 715 716 717 720 731
@@ -8169,6 +8412,13 @@ country = {
 			religion = carthaginian_pantheon
 		
 			capital = 766
+			
+			pantheon = {
+				{ deity = 404 }
+				{ deity = 410 }
+				{ deity = 405 }
+				{ deity = 403 }
+			}
 		
 			own_control_core =  {
 			766 767 768 769 771
@@ -8195,6 +8445,13 @@ country = {
 			religion = carthaginian_pantheon
 		
 			capital = 747
+			
+			pantheon = {
+				{ deity = 404 }
+				{ deity = 401 }
+				{ deity = 408 }
+				{ deity = 403 }
+			}
 		
 			own_control_core =  {
 			747 748 749
@@ -8206,9 +8463,20 @@ country = {
 			government = aristocratic_republic
 			primary_culture = roman
 			religion = roman_pantheon
-		
+			
 			capital = 1
+			pantheon = {
+			
+			{ deity = 1 }
+			{ deity = 2 } 
+			{ deity = 6 } 
+			{ deity = 4 }
+			
+			}
+			is_antagonist = yes
 		
+			treasures = { 201 61 39 }
+			
 			own_control_core =  {
 			1 2 3 4 5 15 16 19 20 24 25 26 27
 			}
@@ -8455,6 +8723,14 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 73
+			
+			pantheon = { 
+			
+			{ deity = 100 }
+			{ deity = 112 }
+			{ deity = 110 }
+			{ deity = 152 }
+			}
 		
 			own_control_core =  {
 			73
@@ -8780,6 +9056,15 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 84
+			
+			pantheon = { 
+			
+			{ deity = 168 }
+			{ deity = 169 }
+			{ deity = 170 }
+			{ deity = 171 }
+			
+			}
 		
 			own_control_core =  {
 			80 81 82 83 84 87 88 101 7837 7838 7840
@@ -8797,6 +9082,15 @@ country = {
 			own_control_core =  {
 			86
 			}
+			
+			pantheon = {
+				{ deity = 102 }
+				{ deity = 104 }
+				{ deity = 113 }
+				{ deity = 116 }
+			}
+			
+			treasures = { 96 }
 		}
 		
 	
@@ -10275,10 +10569,21 @@ country = {
 			religion = carthaginian_pantheon
 		
 			capital = 3256
+			
+			pantheon = { 
+			
+			{ deity = 425 }
+			{ deity = 401 }
+			{ deity = 428 }	
+			{ deity = 426}
+			
+			}
 		
 			own_control_core =  {
 			1470 1471 3080 3092 3095 3240 3241 3242 3243 3244 3245 3249 3250 3251 3252 3253 3256 3259 3260 3261 3263 3266 3270 3272 3274 3275 3279 3281 3282 3283 3285 3286 3287
 			}
+			
+			treasures = { 45 }
 		}
 		
 	
@@ -10288,6 +10593,13 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 516
+			
+			pantheon = {
+				{ deity = 1350 }
+				{ deity = 457 }
+				{ deity = 454 }
+				{ deity = 453 }
+			}
 		
 			own_control_core =  {
 			445 453 515 516 517 518 519 520 521 522 523 526 527 528 529 530 531 532 533 7689 7691
@@ -11367,6 +11679,15 @@ country = {
 			religion = druidism
 		
 			capital = 2348
+			
+			pantheon = { 
+			
+			{ deity = 200 }
+			{ deity = 201 }
+			{ deity = 253 }
+			{ deity = 203 }
+			
+			}
 		
 			own_control_core =  {
 			2348 2360 2362 2365 2366 2369 2413 2434 2435 2437 2438 2439
@@ -11510,7 +11831,16 @@ country = {
 			religion = druidism
 		
 			capital = 3697
-		
+			
+			pantheon = { 
+			
+			{ deity = 250 }
+			{ deity = 201 }
+			{ deity = 202 }
+			{ deity = 203 }
+			
+			}
+
 			own_control_core =  {
 			3052 3053 3054 3693 3697 3698 3735 3738
 			}
@@ -12368,6 +12698,13 @@ country = {
 			religion = hindu
 		
 			capital = 4440
+			
+			pantheon = {
+				{ deity = 1106 }
+				{ deity = 1112 }
+				{ deity = 1101 }
+				{ deity = 1111 }
+			}
 		
 			own_control_core =  {
 			4440 4442 4443 4444 4445 4462 4463 7367 7400 7480 7659
