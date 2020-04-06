@@ -7010,10 +7010,13 @@ country = {
 		
 	
 		ATH = {
+			family = 11
+			family = 12
+			family = 13
 			government = democratic_republic
 			primary_culture = athenian
 			religion = roman_pantheon
-		
+			diplomatic_stance=trading_stance
 			capital = 416
 			
 			pantheon = { 
@@ -7034,9 +7037,28 @@ country = {
 		
 	
 		SPA = {
+			family = 9
+			family = 10
 			government = stratocratic_monarchy
 			primary_culture = peloponnesian
 			religion = roman_pantheon
+			
+			historical_regnal_numbers = {
+				Agis = 3
+				Archidamos = 3
+				Kleomenes = 2
+				Kleombrotos = 1
+				Agesipolis = 2
+				Pausanias = 1
+				Pleistarchos = 1
+				Leonidas = 1
+				Polydoros = 1
+				Menelaos = 1
+				Orestes = 1
+				Dion = 1
+				Aristodemos = 1
+				Demaratos = 1
+			}
 		
 			capital = 427
 			
@@ -7058,9 +7080,14 @@ country = {
 		
 	
 		EPI = {
+			family = 40
+			family = 41
 			government = aristocratic_monarchy
 			primary_culture = epirote
 			religion = roman_pantheon
+			diplomatic_stance=warmongering_stance
+			capital = 476
+			monarchy_military_reforms=relaxed_recruiting_standards
 		
 			capital = 476
 			
@@ -7640,9 +7667,15 @@ country = {
 		
 	
 		KIO = {
+			family = 35
 			government = aristocratic_monarchy
 			primary_culture = bithynian
 			religion = zoroaster
+			
+			historical_regnal_numbers = {
+				Mithridates = 1
+				Ariobarzanes = 1
+			}
 		
 			capital = 245
 		
@@ -7653,15 +7686,18 @@ country = {
 		
 	
 		SNP = {
+			family = 54
 			government = despotic_monarchy
 			primary_culture = greco_pontic
 			religion = roman_pantheon
-		
-			capital = 1812
+			diplomatic_stance=trading_stance
+			capital = 1812 #Sinope
 		
 			own_control_core =  {
 			1810 1812
 			}
+			
+			treasures = { 105 }
 		}
 		
 	
@@ -7744,11 +7780,12 @@ country = {
 		
 	
 		PAA = {
+			family = 50
 			government = tribal_kingdom
 			primary_culture = macedonian
 			religion = roman_pantheon
-		
-			capital = 397
+			diplomatic_stance=appeasement_stance
+			capital = 397 #Stobi
 		
 			own_control_core =  {
 			397 414 497 498 4153 4302 4303 4304 4305 4306
@@ -7770,11 +7807,20 @@ country = {
 		
 	
 		BPK = {
+			family = 62
 			government = despotic_monarchy
 			primary_culture = bosporan
 			religion = roman_pantheon
-		
+			diplomatic_stance=trading_stance
 			capital = 4549
+			
+			historical_regnal_numbers = {
+				Seleukos = 1
+				Spartokos = 2
+				Pairisades = 1
+				Gorgippos = 1
+				Leukon = 1
+			}
 		
 			own_control_core =  {
 			4539 4540 4541 4542 4543 4544 4549 4550 4559 4560 4561 4562 4563 4564 4565 4566
@@ -7887,6 +7933,7 @@ country = {
 		
 	
 		SCE = {
+			family = 64
 			government = tribal_chiefdom
 			primary_culture = siraci
 			religion = indo_iranian_religion
@@ -8043,11 +8090,15 @@ country = {
 		
 	
 		TRE = {
+			family = 8
 			government = aristocratic_monarchy
-			primary_culture = thracian
 			religion = roman_pantheon
+			diplomatic_stance=warmongering_stance
+			primary_culture = thracian #Ruled by Macedonian King
+			monarchy_military_reforms=relaxed_recruiting_standards
 		
-			capital = 350
+			is_antagonist = yes
+			capital = 350 #Lysimachea
 			
 			pantheon = {
 				{ deity = 110 }
@@ -8065,8 +8116,10 @@ country = {
 		
 	
 		ODR = {
+			family = 51
 			government = tribal_kingdom
 			primary_culture = thracian
+			diplomatic_stance=warmongering_stance
 			religion = roman_pantheon
 		
 			capital = 478
@@ -8078,7 +8131,10 @@ country = {
 		
 	
 		PRY = {
+			family = 4
+			family = 5
 			government = aristocratic_monarchy
+			diplomatic_stance=appeasement_stance
 			primary_culture = macedonian
 			religion = roman_pantheon
 		
@@ -8126,6 +8182,7 @@ country = {
 		
 	
 		BIT = {
+			family = 44
 			government = aristocratic_monarchy
 			primary_culture = bithynian
 			religion = roman_pantheon
@@ -8139,9 +8196,14 @@ country = {
 		
 	
 		HCP = {
+			family = 42
 			government = aristocratic_monarchy
 			primary_culture = bithynian
 			religion = roman_pantheon
+			
+			historical_regnal_numbers = {
+				Klearchos = 1
+			}
 		
 			capital = 207
 		
@@ -8152,10 +8214,17 @@ country = {
 		
 	
 		CAP = {
+			family = 34
 			government = despotic_monarchy
+			#primary_culture = cappadocian
 			primary_culture = macedonian
+			#religion = zoroaster
 			religion = roman_pantheon
-		
+			
+			historical_regnal_numbers = {
+				Ariarathes = 1
+			}
+			
 			capital = 1799
 			
 			historical_regnal_numbers = {
@@ -8209,11 +8278,13 @@ country = {
 		
 	
 		SEL = {
+			family = 30
+			family = 70
 			government = aristocratic_monarchy
 			primary_culture = macedonian
 			religion = roman_pantheon
-		
 			capital = 911
+			diplomatic_stance=warmongering_stance
 			
 			pantheon = {
 				{ deity = 756 }
@@ -8231,6 +8302,10 @@ country = {
 		
 	
 		ADI = {
+			family = 14
+			family = 15
+			family = 16
+			family = 17
 			government = despotic_monarchy
 			primary_culture = assyrian
 			religion = zoroaster
@@ -8244,6 +8319,14 @@ country = {
 		
 	
 		ARM = {
+			family = 71
+			
+			historical_regnal_numbers = {
+				Orontes = 2
+				Hidarnes = 3
+				Ardashir = 1
+			}
+		
 			government = despotic_monarchy
 			primary_culture = armenian
 			religion = armenian_religion
@@ -8257,11 +8340,12 @@ country = {
 		
 	
 		MAP = {
+			family = 31
 			government = despotic_monarchy
 			primary_culture = median
 			religion = zoroaster
-		
 			capital = 1515
+			diplomatic_stance=appeasement_stance
 			
 			pantheon = {
 				{ deity = 307 } # Atar
@@ -8279,6 +8363,8 @@ country = {
 		
 	
 		IBR = {
+			family = 32
+			
 			government = despotic_monarchy
 			primary_culture = ibero
 			religion = caucasian_religion
@@ -8292,6 +8378,8 @@ country = {
 		
 	
 		COL = {
+			family = 33
+			
 			government = despotic_monarchy
 			primary_culture = colchian
 			religion = caucasian_religion
@@ -8331,9 +8419,12 @@ country = {
 		
 	
 		BAC = {
+			family = 61
 			government = despotic_monarchy
 			primary_culture = macedonian
 			religion = roman_pantheon
+			diplomatic_stance=warmongering_stance
+			monarchy_citizen_law = foreign_law_for_minorities
 		
 			capital = 6678
 			
@@ -8379,6 +8470,7 @@ country = {
 		
 	
 		JUD = {
+			family = 60
 			government = theocratic_monarchy
 			primary_culture = hebrew
 			religion = judaism
@@ -8401,6 +8493,7 @@ country = {
 		
 	
 		SMA = {
+			family = 58
 			government = theocratic_monarchy
 			primary_culture = hebrew
 			religion = judaism
@@ -8414,9 +8507,11 @@ country = {
 		
 	
 		BYB = {
+			family = 46
 			government = despotic_monarchy
 			primary_culture = phoenician
 			religion = carthaginian_pantheon
+			diplomatic_stance=trading_stance
 		
 			capital = 766
 			
@@ -8434,6 +8529,7 @@ country = {
 		
 	
 		ARA = {
+			family = 45
 			government = despotic_monarchy
 			primary_culture = phoenician
 			religion = carthaginian_pantheon
@@ -8447,6 +8543,7 @@ country = {
 		
 	
 		SID = {
+			family = 47
 			government = despotic_monarchy
 			primary_culture = phoenician
 			religion = carthaginian_pantheon
@@ -8467,7 +8564,11 @@ country = {
 		
 	
 		ROM = {
+			family = 0
+			family = 1
+			family = 2
 			government = aristocratic_republic
+			diplomatic_stance=warmongering_stance
 			primary_culture = roman
 			religion = roman_pantheon
 			
@@ -8491,10 +8592,13 @@ country = {
 		
 	
 		SAM = {
+			family = 29
 			government = aristocratic_republic
+			diplomatic_stance=warmongering_stance
 			primary_culture = samnite
 			religion = roman_pantheon
-		
+			centralization=10
+			
 			capital = 32
 		
 			own_control_core =  {
@@ -8507,8 +8611,15 @@ country = {
 			government = oligarchic_republic
 			primary_culture = etruscan
 			religion = roman_pantheon
+			diplomatic_stance=trading_stance
+			family = 18
+			family = 19
+			family = 20
+			family = 21
 		
 			capital = 114
+			
+			treasures = { 40 }
 		
 			own_control_core =  {
 			14 17 18 21 22 102 112 113 114 115 116 120 124 125 126 127 128 129 130 131 134 135 136 137
@@ -9058,6 +9169,7 @@ country = {
 		
 	
 		SYR = {
+			family = 24
 			government = aristocratic_monarchy
 			primary_culture = syracusan
 			religion = roman_pantheon
@@ -10571,9 +10683,14 @@ country = {
 		
 	
 		CAR = {
+			family = 25
+			family = 26
+			family = 68
+			family = 69
 			government = aristocratic_republic
 			primary_culture = carthaginian
 			religion = carthaginian_pantheon
+			diplomatic_stance=trading_stance
 		
 			capital = 3256
 			
@@ -10595,11 +10712,16 @@ country = {
 		
 	
 		EGY = {
+			family = 6
+			family = 7
 			government = aristocratic_monarchy
+			diplomatic_stance=appeasement_stance
 			primary_culture = macedonian
 			religion = roman_pantheon
-		
-			capital = 516
+			capital = 516 #Alexandria
+			succession_law=egyption_succession_law
+			succession=old_egyptian_succession
+			monarchy_citizen_law = foreign_law_for_minorities
 			
 			pantheon = {
 				{ deity = 1350 }
@@ -10628,11 +10750,12 @@ country = {
 		
 	
 		MSY = {
-			government = tribal_federation
+			family = 55
+			government = tribal_kingdom
 			primary_culture = massylian
 			religion = berber_religion
-		
 			capital = 3163
+			centralization=10
 		
 			own_control_core =  {
 			3146 3147 3148 3149 3151 3156 3157 3158 3159 3162 3163 3164 3165 3166 3167 3177 3178 3179 3180 3181 3182 3183 3184 3203 3204 3206 3207 3213 3215 3217 3218 3219 3220 3221 3223 3224 3228 3231 3232 3233 3234 3268 3269 3355
@@ -10641,10 +10764,10 @@ country = {
 		
 	
 		CYR = {
+			family = 66
 			government = despotic_monarchy
 			primary_culture = cyrenaican
 			religion = roman_pantheon
-		
 			capital = 3360
 		
 			own_control_core =  {
@@ -10680,6 +10803,7 @@ country = {
 		
 	
 		KSH = {
+			family=72
 			government = despotic_monarchy
 			primary_culture = meroitic
 			religion = egyptian_pantheon
@@ -12492,10 +12616,11 @@ country = {
 		
 	
 		TLN = {
+			family = 53
 			government = despotic_monarchy
 			primary_culture = taulantian
 			religion = roman_pantheon
-		
+
 			capital = 415
 		
 			own_control_core =  {
@@ -12505,10 +12630,17 @@ country = {
 		
 	
 		DRD = {
+			family = 52
 			government = tribal_kingdom
 			primary_culture = dardanian
 			religion = roman_pantheon
-		
+
+			historical_regnal_numbers = {
+				Bardylis = 1
+				Grabos = 1
+				Pleuratos = 1
+			}
+			
 			capital = 4096
 		
 			own_control_core =  {
@@ -12700,11 +12832,13 @@ country = {
 		
 	
 		MRY = {
+			family = 27
+			family = 28
 			government = aristocratic_monarchy
 			primary_culture = magadhi
 			religion = hindu
-		
-			capital = 4440
+			diplomatic_stance=appeasement_stance
+			capital = 4440 # Pataliputra
 			
 			pantheon = {
 				{ deity = 1106 }
@@ -12837,6 +12971,7 @@ country = {
 		
 	
 		PND = {
+			family = 37
 			government = despotic_monarchy
 			primary_culture = tamil
 			religion = hindu
@@ -12876,6 +13011,7 @@ country = {
 		
 	
 		CHL = {
+			family = 36
 			government = despotic_monarchy
 			primary_culture = tamil
 			religion = hindu
@@ -12902,6 +13038,7 @@ country = {
 		
 	
 		ANU = {
+			family = 67
 			government = aristocratic_monarchy
 			primary_culture = lankan
 			religion = hindu
@@ -12954,6 +13091,7 @@ country = {
 		
 	
 		KAL = {
+			family = 39
 			government = despotic_monarchy
 			primary_culture = kalingan
 			religion = hindu
@@ -13006,6 +13144,7 @@ country = {
 		
 	
 		ALU = {
+			family = 38
 			government = tribal_kingdom
 			primary_culture = kannadan
 			religion = hindu
@@ -13435,6 +13574,7 @@ country = {
 		
 	
 		SCY = {
+			family = 63
 			government = tribal_kingdom
 			primary_culture = scythian
 			religion = indo_iranian_religion
@@ -13448,6 +13588,7 @@ country = {
 		
 	
 		ZGY = {
+			family = 65
 			government = tribal_kingdom
 			primary_culture = sindi
 			religion = indo_iranian_religion
