@@ -8181,6 +8181,13 @@ country = {
 			religion = anatolian_religion
 		
 			capital = 1819
+			
+			pantheon = {
+				{ deity = 153 } # Zeus Stratios
+				{ deity = 154 } # selene
+				{ deity = 351 } # Dactyl
+				{ deity = 353 } # Cybele
+			}
 		
 			own_control_core =  {
 			203 1786 1787 1788 1789 1790 1791 1792 1793 1801 1804 1806 1808 1809 1819 1821 1822 1823 1824 1826 1831 1833 1834 1837 1838 1839 1840 1845 1846
