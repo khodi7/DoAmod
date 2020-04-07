@@ -7131,6 +7131,8 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 456
+			
+			treasures = { 86 }
 		
 			own_control_core =  {
 			401 456 457 460 461 466 469 7803
@@ -7170,6 +7172,8 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 434
+			
+			treasures = { 59 }
 		
 			own_control_core =  {
 			434
@@ -7201,12 +7205,27 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 436
+			
+			treasures = { 58 }
 		
 			own_control_core =  {
 			436
 			}
 		}
 		
+		TEG = {
+			government = oligarchic_republic
+			primary_culture = arcadian
+			religion = roman_pantheon
+
+			capital = 7891
+
+			own_control_core = 	{
+				7891
+			}
+
+			treasures = { 117 }
+		}
 	
 		AIG = {
 			government = oligarchic_republic
@@ -7251,7 +7270,7 @@ country = {
 			}
 		
 			own_control_core =  {
-			440 7892 7891
+			440 7892 7894
 			}
 		}
 		
@@ -7299,6 +7318,8 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 451
+			
+			treasures = { 109 }
 		
 			own_control_core =  {
 			451
@@ -7502,7 +7523,7 @@ country = {
 			treasures = { 56 57 87 }
 		
 			own_control_core =  {
-			399 402 406 423 424 458 468 475 7798 7896
+			399 402 406 423 468 475 7798 7896
 			}
 		}
 		
@@ -7522,6 +7543,8 @@ country = {
 			{ deity = 117 }
 			
 			}
+			
+			treasures = { 80 }
 		
 			own_control_core =  {
 			263 375 387 437 443 454 472 1835 1915 1964 7905
@@ -7548,6 +7571,8 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 1970
+			
+			treasures = { 103 }
 		
 			own_control_core =  {
 			1653 1970 1996
@@ -7644,12 +7669,14 @@ country = {
 			government = democratic_republic
 			primary_culture = troan
 			religion = roman_pantheon
-		
+			diplomatic_stance=trading_stance
 			capital = 257
 		
 			own_control_core =  {
 			255 256 257 258 259 260 261 268 279 281 282 283 284 285
 			}
+			
+			treasures = { 97 106 200 }
 		}
 		
 	
@@ -7737,6 +7764,8 @@ country = {
 			own_control_core =  {
 			1807
 			}
+			
+			treasures = { 49 51 }
 		}
 		
 	
@@ -7750,6 +7779,8 @@ country = {
 			own_control_core =  {
 			1981
 			}
+			
+			treasures = { 116 }
 		}
 		
 	
@@ -8293,7 +8324,7 @@ country = {
 				{ deity = 117 }
 			}
 
-			treasures = { 102 }
+			treasures = { 102 108 }
 		
 			own_control_core =  {
 			896 898 899 911 912 913 914 916 924 926 927 933 934 938 940 941 942 943 944 961 962 964 965 969 971 973
@@ -8600,6 +8631,8 @@ country = {
 			centralization=10
 			
 			capital = 32
+			
+			treasures = { 41 }
 		
 			own_control_core =  {
 			10 32 33 41 42 43 44 45 46 1716 1718
@@ -8659,6 +8692,8 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 107
+			
+			treasures = { 38 }
 		
 			own_control_core =  {
 			23 105 107
@@ -8776,6 +8811,8 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 55
+			
+			treasures = { 98 }
 		
 			own_control_core =  {
 			55
@@ -8789,6 +8826,8 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 56
+			
+			treasures = { 43 }
 		
 			own_control_core =  {
 			56
@@ -8828,6 +8867,8 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 78
+			
+			treasures = { 44 }
 		
 			own_control_core =  {
 			78
@@ -10769,6 +10810,8 @@ country = {
 			primary_culture = cyrenaican
 			religion = roman_pantheon
 			capital = 3360
+			
+			treasures = { 48 }
 		
 			own_control_core =  {
 			3340 3341 3342 3343 3344 3345 3346 3347 3348 3349 3350 3351 3352 3353 3354 3357 3358 3359 3360 3361 3362 3363 3364 3365 3366 3367
@@ -13097,6 +13140,8 @@ country = {
 			religion = hindu
 		
 			capital = 7080
+			
+			treasures = { 181  }
 		
 			own_control_core =  {
 			7080 7081 7082 7083 7085 7086 7100 7137 7138 7167 7170 7171 7172 7173 7174 7179 7180 7181
@@ -13620,6 +13665,8 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 1720
+			
+			treasures = { 101 }
 		
 			own_control_core =  {
 			1720 1738 1741
@@ -13828,6 +13875,8 @@ country = {
 			religion = druidism
 		
 			capital = 2170
+			
+			treasures = { 60 }
 		
 			own_control_core =  {
 			2170 2195
@@ -14010,6 +14059,8 @@ country = {
 			religion = roman_pantheon
 		
 			capital = 85
+			
+			treasures = { 47 107 }
 		
 			own_control_core =  {
 			85
@@ -14065,6 +14116,43 @@ country = {
 		
 			own_control_core =  {
 			93
+			}
+		}
+		
+		AMP = {
+			government = oligarchic_republic
+			primary_culture = aetolian
+			religion = roman_pantheon
+
+			capital = 458
+
+			own_control_core = {
+				458
+			}
+
+			treasures = { 53 }
+		}
+		
+		DLP = {
+			government = oligarchic_republic
+			primary_culture = boeotian
+			religion = roman_pantheon
+			
+			capital = 424
+
+			pantheon = {
+			
+			{ deity = 103 }
+			{ deity = 104 }
+			{ deity = 105 }
+			{ deity = 116 }
+			
+			}
+
+			treasures = { 76 99 100 }
+
+			own_control_core = {
+				424
 			}
 		}
 		
@@ -15078,7 +15166,7 @@ country = {
 			capital = 418
 		
 			own_control_core =  {
-			418 7893 7894
+			418 7893
 			}
 		}
 		
