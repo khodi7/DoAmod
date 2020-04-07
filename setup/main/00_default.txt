@@ -15657,7 +15657,7 @@ country = {
 			primary_culture = volcae
 			religion = anatolian_religion
 		
-			capital = 189
+			capital = 671
 		
 			own_control_core =  {
 			175 183 188 189 190 192 193 194 195 196 197 202 204 222 224 226 227 228 229 231 328 1811 1820 1825 1832 1836 1841 1907 1909 1923 1932
