@@ -3,7 +3,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="vegetables"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -22,7 +22,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="cloth"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -68,7 +68,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="cloth"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -91,7 +91,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="cloth"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="city"
 	citizen={
@@ -152,7 +152,7 @@
 	culture="pontic"
 	religion="armenian_religion"
 	trade_goods="leather"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -168,7 +168,7 @@
 	culture="pontic"
 	religion="armenian_religion"
 	trade_goods="cattle"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -192,7 +192,7 @@
 	culture="pontic"
 	religion="armenian_religion"
 	trade_goods="vegetables"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -211,7 +211,7 @@
 	culture="pontic"
 	religion="armenian_religion"
 	trade_goods="vegetables"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -234,7 +234,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="horses"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="city"
 	freemen={
@@ -257,7 +257,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="wood"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -280,7 +280,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="wood"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -299,7 +299,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="stone"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -322,7 +322,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="cattle"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -345,7 +345,7 @@
 	culture="pontic"
 	religion="armenian_religion"
 	trade_goods="leather"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -372,7 +372,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="vegetables"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -393,7 +393,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="stone"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -412,7 +412,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="earthware"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="city"
 	citizen={
@@ -431,7 +431,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="earthware"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -447,7 +447,7 @@
 	culture="pontic"
 	religion="roman_pantheon"
 	trade_goods="cloth"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -463,7 +463,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="wood"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -486,7 +486,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="cloth"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -517,7 +517,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="cloth"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -552,7 +552,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="leather"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="city"
 	citizen={
@@ -586,7 +586,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="earthware"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="city"
 	citizen={
@@ -608,7 +608,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="wild_game"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -627,7 +627,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="vegetables"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -646,7 +646,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="leather"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -684,7 +684,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="salt"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -738,7 +738,7 @@
 	culture="cappadocian"
 	religion="zoroaster"
 	trade_goods="cattle"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -760,7 +760,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="vegetables"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -779,7 +779,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="vegetables"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -801,7 +801,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="vegetables"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -823,7 +823,7 @@
 	culture="volcae"
 	religion="anatolian_religion"
 	trade_goods="hemp"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="city"
 	freemen={
@@ -842,7 +842,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="iron"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -861,7 +861,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="iron"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="city"
 	citizen={
@@ -883,7 +883,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="vegetables"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -902,7 +902,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="cloth"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -918,7 +918,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="leather"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -938,7 +938,7 @@
 	culture="pontic"
 	religion="zoroaster"
 	trade_goods="wild_game"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -958,7 +958,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="grain"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -986,7 +986,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="vegetables"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1013,7 +1013,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="vegetables"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1033,7 +1033,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="vegetables"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1049,7 +1049,7 @@
 	culture="cappadocian"
 	religion="zoroaster"
 	trade_goods="wild_game"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	slaves={
@@ -1065,7 +1065,7 @@
 	culture="pontic"
 	religion="anatolian_religion"
 	trade_goods="wood"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1086,7 +1086,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="wood"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1102,7 +1102,7 @@
 	culture="cappadocian"
 	religion="zoroaster"
 	trade_goods="wood"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1125,7 +1125,7 @@
 	culture="cappadocian"
 	religion="zoroaster"
 	trade_goods="horses"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="city"
 	citizen={
@@ -1159,7 +1159,7 @@
 	culture="cappadocian"
 	religion="zoroaster"
 	trade_goods="honey"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1179,7 +1179,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="cattle"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -1211,7 +1211,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="vegetables"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1235,7 +1235,7 @@
 	culture="cappadocian"
 	religion="zoroaster"
 	trade_goods="wood"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1255,7 +1255,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="honey"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -1290,7 +1290,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="vegetables"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -1324,7 +1324,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="cloth"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="city"
 	citizen={
@@ -1354,7 +1354,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="cattle"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1377,7 +1377,7 @@
 	culture="cappadocian"
 	religion="zoroaster"
 	trade_goods="vegetables"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	slaves={
@@ -1409,7 +1409,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="wood"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1428,7 +1428,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="precious_metals"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1455,7 +1455,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="vegetables"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1474,7 +1474,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="iron"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1497,7 +1497,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="cattle"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1516,7 +1516,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="cattle"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1535,7 +1535,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="leather"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1554,7 +1554,7 @@
 	culture="volcae"
 	religion="zoroaster"
 	trade_goods="iron"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="city"
 	citizen={
@@ -1649,7 +1649,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="wild_game"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -1684,7 +1684,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="vegetables"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1709,7 +1709,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="hemp"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	citizen={
@@ -1731,7 +1731,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="stone"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1750,7 +1750,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="cattle"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1769,7 +1769,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="wood"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1788,7 +1788,7 @@
 	culture="cappadocian"
 	religion="anatolian_religion"
 	trade_goods="iron"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	freemen={
@@ -1807,7 +1807,7 @@
 	culture="pontic"
 	religion="armenian_religion"
 	trade_goods="fur"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	slaves={
@@ -1823,7 +1823,7 @@
 	culture="pontic"
 	religion="armenian_religion"
 	trade_goods="vegetables"
-	civilization_value=25
+	civilization_value=40
 	barbarian_power=0
 	province_rank="settlement"
 	slaves={
