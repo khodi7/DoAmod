@@ -779,7 +779,7 @@
 	tribesmen={
 		amount=1
 	}
-	omen_talab
+	holy_site = omen_talab
 }
 
 4684={ #Himiara

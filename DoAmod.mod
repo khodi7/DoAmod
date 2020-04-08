@@ -4,4 +4,4 @@ description=""
 tags={
 	"Overhaul"
 }
-path="mod/DoAmod"
+path="mod/DoAmod-master"

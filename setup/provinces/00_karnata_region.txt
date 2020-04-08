@@ -471,7 +471,7 @@
 	tribesmen={
 		amount=2
 	}
-	omen_kanya_devi
+	holy_site = omen_kanya_devi
 }
 
 6904={ #Aloe
@@ -1599,7 +1599,7 @@
 	tribesmen={
 		amount=9
 	}
-	omen_bhadrabahu
+	holy_site = omen_bhadrabahu
 }
 
 7023={ #Srnguri

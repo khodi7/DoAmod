@@ -540,7 +540,6 @@
 	tribesmen={
 		amount=3
 	}
-	holy_site = omen_zeus
 	holy_site = omen_baal
 }
 
