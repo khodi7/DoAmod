@@ -69,6 +69,7 @@
 	slaves={
 		amount=30
 	}
+	holy_site = omen_ptah
 }
 
 501={ #Awnu
@@ -93,6 +94,7 @@
 	slaves={
 		amount=29
 	}
+	holy_site = omen_ra
 }
 
 502={ #Per-Atum
@@ -150,6 +152,7 @@
 	slaves={
 		amount=30
 	}
+	holy_site = omen_sekhmet
 }
 
 505={ #Klysma
@@ -438,6 +441,7 @@
 	slaves={
 		amount=3
 	}
+	holy_site = omen_alexander
 }
 
 517={ #Hermou Polis Mikra
@@ -1338,6 +1342,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_moses
 }
 
 1708={ #Tell el-Mashraba

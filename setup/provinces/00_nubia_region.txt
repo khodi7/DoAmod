@@ -18,6 +18,7 @@
 	tribesmen={
 		amount=1
 	}
+	holy_site = omen_horus
 }
 
 577={ #Nubet
@@ -69,6 +70,7 @@
 	slaves={
 		amount=3
 	}
+	holy_site = omen_isis
 }
 
 592={ #Talmes

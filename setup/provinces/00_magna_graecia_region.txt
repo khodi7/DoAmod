@@ -15,6 +15,7 @@
 	slaves={
 		amount=7
 	}
+	holy_site = omen_diana
 }
 
 7={ #Neapolis
@@ -1047,6 +1048,7 @@
 	tribesmen={
 		amount=4
 	}
+	holy_site = omen_persephone
 }
 
 74={ #Stylacium
@@ -1322,6 +1324,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_arethousa
 }
 
 85={ #Gelas
@@ -1382,6 +1385,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_heracles
 }
 
 87={ #Akrai

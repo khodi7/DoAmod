@@ -18,6 +18,7 @@
 	tribesmen={
 		amount=3
 	}
+	holy_site = omen_hephaestus
 }
 
 297={ #Imbros
@@ -1098,6 +1099,7 @@
 	tribesmen={
 		amount=7
 	}
+	holy_site = omen_derzelas
 }
 
 4249={ #Krounoi
@@ -1328,6 +1330,7 @@
 	tribesmen={
 		amount=1
 	}
+	holy_site = omen_sabazios
 }
 
 4311={ #Parambole

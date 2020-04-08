@@ -115,6 +115,7 @@
 	tribesmen={
 		amount=4
 	}
+	holy_site = omen_semnocosus
 }
 
 1324={ #Mirobriga Couneia

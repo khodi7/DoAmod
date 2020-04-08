@@ -886,6 +886,7 @@
 	tribesmen={
 		amount=3
 	}
+	holy_site = omen_berobreo
 }
 
 1150={ #Vicus Spacorum

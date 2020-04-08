@@ -641,6 +641,7 @@
 	tribesmen={
 		amount=4
 	}
+	holy_site = omen_dercetius
 }
 
 1237={ #Edetania Centralis

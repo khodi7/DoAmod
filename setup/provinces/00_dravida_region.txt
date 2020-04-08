@@ -78,6 +78,7 @@
 	tribesmen={
 		amount=8
 	}
+	holy_site = omen_rama
 }
 
 6921={ #Perinkari
@@ -970,6 +971,7 @@
 	tribesmen={
 		amount=1
 	}
+	holy_site = omen_sigiriya
 }
 
 6979={ #Simhalava

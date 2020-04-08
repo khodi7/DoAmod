@@ -586,6 +586,7 @@
 	tribesmen={
 		amount=5
 	}
+	holy_site = omen_krishna
 }
 
 6814={ #Automula
@@ -627,6 +628,7 @@
 	tribesmen={
 		amount=5
 	}
+	holy_site = omen_soma
 }
 
 6817={ #Sana
@@ -668,6 +670,7 @@
 	tribesmen={
 		amount=4
 	}
+	holy_site =  omen_neminatha
 }
 
 6819={ #Ujjayanta
@@ -877,6 +880,7 @@
 	tribesmen={
 		amount=4
 	}
+	holy_site = omen_rishabhanatha
 }
 
 6832={ #Khambalida

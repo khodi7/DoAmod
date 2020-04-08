@@ -18,6 +18,7 @@
 	tribesmen={
 		amount=7
 	}
+	holy_site = omen_vishnu
 }
 
 4438={ #Vairata
@@ -191,6 +192,7 @@
 	tribesmen={
 		amount=7
 	}
+	holy_site = omen_shiva
 }
 
 4477={ #Tripura
@@ -331,6 +333,7 @@
 	freemen={
 		amount=2
 	}
+	holy_site = omen_brahma
 }
 
 4486={ #Devasabha

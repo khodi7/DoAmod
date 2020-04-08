@@ -188,6 +188,7 @@
 	tribesmen={
 		amount=5
 	}
+	holy_site = omen_adur_berzen_mihr
 }
 
 3445={ #Sangast

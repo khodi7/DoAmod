@@ -944,6 +944,7 @@
 	tribesmen={
 		amount=8
 	}
+	holy_site = omen_sucellus
 }
 
 2439={ #Aballo

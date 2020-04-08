@@ -425,6 +425,7 @@
 	tribesmen={
 		amount=1
 	}
+	holy_site = omen_alcis
 }
 
 4769={ #Manimia
@@ -634,6 +635,7 @@
 	tribesmen={
 		amount=3
 	}
+	holy_site = omen_perkunas
 }
 
 4898={ #Vectia
@@ -888,6 +890,7 @@
 	tribesmen={
 		amount=1
 	}
+	holy_site = omen_televelis
 }
 
 6278={ #Mornal
@@ -1159,6 +1162,7 @@
 	tribesmen={
 		amount=3
 	}
+	holy_site = omen_medeine
 }
 
 7808={ #Rubonia
@@ -1260,6 +1264,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_saulia
 }
 
 7816={ #Carbonia Occidentalis

@@ -72,6 +72,7 @@
 	slaves={
 		amount=1
 	}
+	holy_site = omen_kopala
 }
 
 1676={ #Meschistha-Harmozike
@@ -94,6 +95,7 @@
 	tribesmen={
 		amount=5
 	}
+	holy_site = omen_armazi
 }
 
 1677={ #Algeti
@@ -368,6 +370,7 @@
 		religion="armenian_religion"
 		amount=1
 	}
+	holy_site = omen_ghmerti
 }
 
 1697={ #Akhaltsikhe
@@ -1164,6 +1167,7 @@
 	slaves={
 		amount=1
 	}
+	holy_site = omen_dali
 }
 
 1750={ #Klukhor Pass

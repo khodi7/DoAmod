@@ -237,6 +237,7 @@
 	tribesmen={
 		amount=4
 	}
+	holy_site = omen_rosmerta
 }
 
 2013={ #Venta
@@ -1757,6 +1758,7 @@
 	tribesmen={
 		amount=4
 	}
+	holy_site = omen_toutatis
 }
 
 2106={ #Canovium

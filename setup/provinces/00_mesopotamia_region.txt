@@ -180,6 +180,7 @@
 	slaves={
 		amount=7
 	}
+	holy_site = omen_ashshur
 }
 
 885={ #Lashom
@@ -621,6 +622,7 @@
 	slaves={
 		amount=5
 	}
+	holy_site = omen_shamash
 }
 
 911={ #Seleukeia Megale
@@ -783,6 +785,7 @@
 	slaves={
 		amount=19
 	}
+	holy_site = omen_marduk
 }
 
 919={ #Borsippa
@@ -812,6 +815,7 @@
 	slaves={
 		amount=34
 	}
+	holy_site = omen_nabu
 }
 
 920={ #Dilbat
@@ -869,6 +873,7 @@
 		religion="arabian_pantheon"
 		amount=1
 	}
+	holy_site = omen_ezekiel
 }
 
 923={ #Qadissiyya
@@ -1003,6 +1008,7 @@
 	slaves={
 		amount=10
 	}
+	holy_site = omen_enlil
 }
 
 930={ #Kuara
@@ -1177,6 +1183,7 @@
 	slaves={
 		amount=5
 	}
+	holy_site = omen_ishtar
 }
 
 938={ #Nina
@@ -1343,6 +1350,7 @@
 	tribesmen={
 		amount=1
 	}
+	holy_site = omen_ezra
 }
 
 944={ #Akkaz
@@ -1635,6 +1643,7 @@
 		religion="arabian_pantheon"
 		amount=3
 	}
+	holy_site = omen_ea
 }
 
 969={ #Darak

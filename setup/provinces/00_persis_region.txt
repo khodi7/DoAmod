@@ -431,6 +431,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_adur_farnbag 
 }
 
 3402={ #Darabgird
@@ -1319,6 +1320,7 @@
 	tribesmen={
 		amount=5
 	}
+	holy_site = omen_anahita
 }
 
 4948={ #Pylai Sousianes

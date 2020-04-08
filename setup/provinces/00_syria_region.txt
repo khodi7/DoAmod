@@ -81,6 +81,7 @@
 	slaves={
 		amount=4
 	}
+	holy_site = omen_deborah
 }
 
 743={ #Sur
@@ -115,6 +116,7 @@
 		religion="judaism"
 		amount=1
 	}
+	holy_site = omen_melqart
 }
 
 744={ #Akdep
@@ -200,6 +202,7 @@
 		religion="judaism"
 		amount=1
 	}
+	holy_site = omen_eshmun
 }
 
 748={ #Berut
@@ -342,6 +345,7 @@
 	slaves={
 		amount=1
 	}
+	holy_site = omen_el
 }
 
 754={ #Palmyra
@@ -364,6 +368,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_alilat
 }
 
 755={ #Veriaraca
@@ -535,6 +540,8 @@
 	tribesmen={
 		amount=3
 	}
+	holy_site = omen_zeus
+	holy_site = omen_baal
 }
 
 764={ #Chalcis sub Libano
@@ -609,6 +616,7 @@
 		religion="judaism"
 		amount=1
 	}
+	holy_site = omen_baalat
 }
 
 767={ #Botruna
@@ -1036,6 +1044,7 @@
 		religion="carthaginian_pantheon"
 		amount=1
 	}
+	holy_site = omen_astarte
 }
 
 787={ #Lysias
@@ -1439,6 +1448,7 @@
 	slaves={
 		amount=1
 	}
+	holy_site = omen_atargatis
 }
 
 808={ #Batnai

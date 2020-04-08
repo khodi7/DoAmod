@@ -337,6 +337,7 @@
 	tribesmen={
 		amount=1
 	}
+	holy_site = omen_rishabhanatha_moksha
 }
 
 5577={ #Nguot
@@ -810,6 +811,7 @@
 	tribesmen={
 		amount=1
 	}
+	holy_site = omen_wealth_earth
 }
 
 6748={ #Cadota
@@ -1162,6 +1164,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_guidance_of_the_wind
 }
 
 6770={ #Toquzbolaq

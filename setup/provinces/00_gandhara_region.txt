@@ -785,6 +785,7 @@
 	tribesmen={
 		amount=5
 	}
+	holy_site = omen_samba
 }
 
 4351={ #Apakara
@@ -1500,6 +1501,7 @@
 	tribesmen={
 		amount=3
 	}
+	holy_site = omen_saraswati
 }
 
 7319={ #Ataka

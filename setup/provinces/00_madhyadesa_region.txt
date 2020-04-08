@@ -468,6 +468,7 @@
 	tribesmen={
 		amount=5
 	}
+	holy_site = omen_vishwanath
 }
 
 4430={ #Kosambi
@@ -685,6 +686,7 @@
 	tribesmen={
 		amount=4
 	}
+	holy_site = omen_kusinagara
 }
 
 4450={ #Kapilavastu

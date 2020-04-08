@@ -790,6 +790,7 @@
 	slaves={
 		amount=2
 	}
+	holy_site = omen_atar
 }
 
 6563={ #Zimyra

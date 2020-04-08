@@ -872,6 +872,7 @@
 	tribesmen={
 		amount=5
 	}
+	holy_site = omen_zibelthiurdos
 }
 
 3125={ #Keletron

@@ -23,6 +23,7 @@
 	tribesmen={
 		amount=4
 	}
+	holy_site = omen_jupiter
 }
 
 2={ #Tibur
@@ -118,6 +119,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_apulu
 }
 
 15={ #Ostia
@@ -296,6 +298,7 @@
 	tribesmen={
 		amount=6
 	}
+	holy_site = omen_turan
 }
 
 23={ #Nequinum
@@ -1202,6 +1205,8 @@
 	tribesmen={
 		amount=6
 	}
+	holy_site = omen_artume
+	holy_site = omen_tinia
 }
 
 132={ #Sarsina

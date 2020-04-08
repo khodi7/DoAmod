@@ -373,6 +373,7 @@
 	slaves={
 		amount=14
 	}
+	holy_site = omen_aphrodite
 }
 
 335={ #Lapethos

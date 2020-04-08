@@ -627,6 +627,7 @@
 	tribesmen={
 		amount=4
 	}
+	holy_site = omen_baal_hammon
 }
 
 3245={ #Curubis
@@ -881,6 +882,7 @@
 	tribesmen={
 		amount=10
 	}
+	holy_site = omen_tanit
 }
 
 3257={ #Atiq
@@ -1192,6 +1194,7 @@
 	tribesmen={
 		amount=3
 	}
+	holy_site = omen_tannit
 }
 
 3270={ #Bisica Lucana

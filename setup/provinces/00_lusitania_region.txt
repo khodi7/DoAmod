@@ -251,6 +251,7 @@
 	tribesmen={
 		amount=4
 	}
+	holy_site = omen_endouellicus
 }
 
 1164={ #Veniatia
@@ -1212,6 +1213,7 @@
 	tribesmen={
 		amount=6
 	}
+	holy_site = omen_ataecina
 }
 
 1400={ #Augusta Emerita

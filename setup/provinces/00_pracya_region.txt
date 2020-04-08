@@ -84,6 +84,7 @@
 	tribesmen={
 		amount=3
 	}
+	holy_site = omen_bodh
 }
 
 4445={ #Rajagagrha
@@ -273,6 +274,7 @@
 	tribesmen={
 		amount=3
 	}
+	holy_site = omen_mahavir_jayanti
 }
 
 4464={ #Devaprastha
@@ -1066,6 +1068,7 @@
 	slaves={
 		amount=3
 	}
+	holy_site = omen_parshvanatha
 }
 
 7365={ #Ladha

@@ -321,6 +321,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_goitosyrus
 }
 
 4546={ #Urgat
@@ -579,6 +580,7 @@
 	tribesmen={
 		amount=5
 	}
+	holy_site = omen_thagimasadas
 }
 
 4558={ #Paniardis
@@ -834,6 +836,7 @@
 	tribesmen={
 		amount=3
 	}
+	holy_site = omen_api
 }
 
 5891={ #Avrar
@@ -1386,6 +1389,7 @@
 	tribesmen={
 		amount=3
 	}
+	holy_site = omen_papaios
 }
 
 7617={ #Stepna

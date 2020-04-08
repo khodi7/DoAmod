@@ -280,6 +280,7 @@
 	slaves={
 		amount=1
 	}
+	holy_site = omen_ga
 }
 
 1635={ #Nyudi
@@ -989,6 +990,7 @@
 	tribesmen={
 		amount=3
 	}
+	holy_site = omen_adgilis_deda
 }
 
 5866={ #Zabender
@@ -1124,6 +1126,7 @@
 	tribesmen={
 		amount=3
 	}
+	holy_site = omen_argimpasa
 }
 
 5875={ #Ashawm

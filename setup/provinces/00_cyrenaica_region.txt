@@ -28,6 +28,7 @@
 		religion="berber_religion"
 		amount=1
 	}
+	holy_site = omen_nanna_tala
 }
 
 3302={ #Zanazia
@@ -169,6 +170,7 @@
 	slaves={
 		amount=1
 	}
+	holy_site = omen_gurzil
 }
 
 3326={ #Base

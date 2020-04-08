@@ -225,6 +225,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_orotalt
 }
 
 4608={ #Phoinikon Kome
@@ -616,6 +617,7 @@
 	tribesmen={
 		amount=1
 	}
+	holy_site = omen_manat
 }
 
 4630={ #Baruka
@@ -1182,6 +1184,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_ailiah
 }
 
 7576={ #Ta'if
@@ -1204,6 +1207,7 @@
 	tribesmen={
 		amount=1
 	}
+	holy_site = omen_al_uzza
 }
 
 7577={ #Attaba

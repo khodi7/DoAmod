@@ -177,6 +177,7 @@
 	tribesmen={
 		amount=3
 	}
+	holy_site = omen_ogmios
 }
 
 3615={ #Mons Alpinus

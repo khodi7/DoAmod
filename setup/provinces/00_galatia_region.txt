@@ -351,6 +351,7 @@
 		religion="roman_pantheon"
 		amount=1
 	}
+	holy_site = omen_cybele
 }
 
 189={ #Gordion
@@ -779,6 +780,7 @@
 	slaves={
 		amount=3
 	}
+	holy_site = omen_attis
 }
 
 309={ #Akmonia
@@ -1387,6 +1389,7 @@
 	tribesmen={
 		amount=5
 	}
+	holy_site = omen_men
 }
 
 1930={ #Apollonia Paroreias

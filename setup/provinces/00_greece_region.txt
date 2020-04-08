@@ -120,6 +120,7 @@
 	slaves={
 		amount=5
 	}
+	holy_site = omen_diktean_zeus
 }
 
 358={ #Knossos
@@ -139,6 +140,7 @@
 	slaves={
 		amount=5
 	}
+	holy_site = omen_ariadne
 }
 
 359={ #Lyktos
@@ -243,6 +245,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_karmanor
 }
 
 372={ #Korion
@@ -516,6 +519,7 @@
 	slaves={
 		amount=6
 	}
+	holy_site = omen_athena
 }
 
 417={ #Megara
@@ -640,6 +644,7 @@
 	slaves={
 		amount=6
 	}
+	holy_site = omen_apollo
 }
 
 425={ #Dodona
@@ -656,6 +661,7 @@
 	slaves={
 		amount=2
 	}
+	holy_site = omen_zeus_naios
 }
 
 426={ #Thebai
@@ -675,6 +681,7 @@
 	slaves={
 		amount=4
 	}
+	holy_site = omen_dionysus
 }
 
 427={ #Sparta
@@ -925,6 +932,7 @@
 	slaves={
 		amount=2
 	}
+	holy_site = omen_zeus
 }
 
 440={ #Argos
@@ -954,6 +962,7 @@
 	slaves={
 		amount=1
 	}
+	holy_site = omen_hera
 }
 
 441={ #Epidauros
@@ -973,6 +982,7 @@
 	slaves={
 		amount=1
 	}
+	holy_site = omen_asclepius
 }
 
 442={ #Aigina
@@ -1595,6 +1605,7 @@
 	slaves={
 		amount=6
 	}
+	holy_site = omen_poseidon
 }
 
 1903={ #Andros
@@ -1903,6 +1914,7 @@
 	slaves={
 		amount=3
 	}
+	holy_site = demeter
 }
 
 7898={ #Rhamnous

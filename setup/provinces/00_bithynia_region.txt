@@ -1229,6 +1229,7 @@
 	tribesmen={
 		amount=4
 	}
+	holy_site = omen_mithra
 }
 
 1775={ #Magnana
@@ -1295,6 +1296,7 @@
 	tribesmen={
 		amount=3
 	}
+	holy_site = omen_nane
 }
 
 1792={ #Kabeira

@@ -820,6 +820,7 @@
 	tribesmen={
 		amount=6
 	}
+	holy_site = omen_glanis
 }
 
 2322={ #Carpentorate

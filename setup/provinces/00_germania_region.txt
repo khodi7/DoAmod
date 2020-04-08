@@ -178,6 +178,7 @@
 	tribesmen={
 		amount=4
 	}
+	holy_site = omen_vagdavercustis
 }
 
 3786={ #Arbalo
@@ -446,6 +447,7 @@
 	slaves={
 		amount=2
 	}
+	holy_site = omen_tuisto
 }
 
 3829={ #Ascalingium
@@ -478,6 +480,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_tamfana
 }
 
 3831={ #Dulgia
@@ -580,6 +583,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_baduhenna
 }
 
 3837={ #Saxonnia
@@ -711,6 +715,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_nehalennia
 }
 
 3845={ #Marsacia

@@ -504,6 +504,7 @@
 	tribesmen={
 		amount=4
 	}
+	holy_site = omen_joseph
 }
 
 681={ #Characmoba
@@ -558,6 +559,7 @@
 	tribesmen={
 		amount=1
 	}
+	holy_site = omen_caleb_joshua
 }
 
 684={ #Jericho
@@ -640,6 +642,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_samuel
 }
 
 688={ #Thekoa
@@ -713,6 +716,7 @@
 	tribesmen={
 		amount=1
 	}
+	holy_site = omen_abraham
 }
 
 692={ #Adora
@@ -954,6 +958,7 @@
 	tribesmen={
 		amount=3
 	}
+	holy_site = omen_al_kutbay
 }
 
 705={ #Sabkah
@@ -1406,6 +1411,7 @@
 	tribesmen={
 		amount=4
 	}
+	holy_site = omen_al_qaum
 }
 
 730={ #Adrou

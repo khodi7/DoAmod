@@ -215,6 +215,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_vahagn
 }
 
 995={ #Molchia
@@ -1289,6 +1290,7 @@
 	tribesmen={
 		amount=8
 	}
+	holy_site = omen_khaldi
 }
 
 1571={ #Artaxata
@@ -1323,6 +1325,7 @@
 	tribesmen={
 		amount=8
 	}
+	holy_site = omen_tir
 }
 
 1572={ #Doubios
@@ -1380,6 +1383,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_theispas
 }
 
 1576={ #Kainepolis Syracene
@@ -1605,6 +1609,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_tsovinar
 }
 
 1592={ #Akunk
@@ -1961,6 +1966,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_mihr
 }
 
 1763={ #Darucinte

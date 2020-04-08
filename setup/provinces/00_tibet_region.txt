@@ -414,6 +414,7 @@
 	tribesmen={
 		amount=10
 	}
+	holy_site = omen_insight
 }
 
 5619={ #Tanglha
@@ -1143,6 +1144,7 @@
 	tribesmen={
 		amount=1
 	}
+	holy_site = omen_spirits_inspiration
 }
 
 5661={ #Rabten
