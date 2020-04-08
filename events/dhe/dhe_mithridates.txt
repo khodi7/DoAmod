@@ -1,4 +1,4 @@
-namespace = dhe_mithridates
+﻿namespace = dhe_mithridates
 
 # Trigger event
 dhe_mithridates.1 = {
@@ -137,7 +137,7 @@ dhe_mithridates.4 = {
 
 	immediate = {
 		scope:mithridates = {
-			add_loyalty = subtract_loyalty_large
+			add_loyalty = loyalty_schemes_punished
 		}
 	}
 
@@ -332,6 +332,10 @@ dhe_mithridates.8 = {
 		add_country_modifier = {
 			name = country_improvement_pontus_greek
 			duration = -1
+		}
+		add_country_modifier = {
+		name = "recent_convert_modifier"
+		duration = 3650
 		}
 		set_variable = {
 			name = "greco_pontic_traditions"

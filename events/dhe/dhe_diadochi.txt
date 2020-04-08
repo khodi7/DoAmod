@@ -224,7 +224,7 @@ diadochi_flavor.10 = {
         	duration = 3650
         }
         current_heir = {
-        	add_loyalty = subtract_loyalty_large
+        	add_loyalty = loyalty_disapproved_joke
         }
 		C:EGY = {
         	add_opinion = {

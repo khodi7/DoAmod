@@ -56,6 +56,15 @@ on_siege_won = { #Only triggers if sieging army has a commander (which is also R
 #scope:former_ruler, root = country
 on_ruler_change = {
 	effect = {
+		if = {
+			limit = {
+				is_subject = yes
+				is_subject_type = subject_mercenary_city_state
+			}
+			current_ruler = {
+				add_martial = 2
+			}
+		}
 		if = { #remove disloyal family mod if exists
 			limit = {
 				exists = root.current_ruler
@@ -137,16 +146,6 @@ on_ruler_change = {
 				}
 			}
 		}
-		if = {
-			limit = {
-				current_ruler = {
-					has_character_modifier = senatorial_commander_ip_47
-				}
-			}
-			current_ruler = {
-				remove_character_modifier = senatorial_commander_ip_47
-			}
-		}
 		clear_befriending_var_effect = yes
 		if = {
 			limit = {
@@ -179,6 +178,21 @@ on_ruler_change = {
 			}
 			remove_variable = ip_mon_38_flag
 		}
+		if = {
+			limit = { 
+				scope:former_ruler = { has_variable = me_syr_current_tyrant_flag }
+			}
+			scope:former_ruler = { 
+				remove_variable = me_syr_current_tyrant_flag
+				save_scope_as = syracuse_old_tyrant
+				employer = {
+					trigger_event = {
+						id = me_syracuse_1_democracy.3
+						days = 1
+					}
+				}
+			}
+		}
 	}
 	on_actions = {
 		on_republic_ruler_change
@@ -190,6 +204,9 @@ on_ruler_change = {
 		succession_crisis.5
 		character_events.8
 		character_events.15
+		diadochi_flavor.6
+		diadochi_flavor.8 #Antigonus bad
+		diadochi_flavor.9 #Antigonus good
 		roman_flavor.5 # Consul Conspiracy - Successful Election
 		roman_flavor.6 # Consul Conspiracy - Unsuccessful Election
 		italian_flavor.9 # Sicily and the Mamertines
@@ -227,6 +244,8 @@ on_civil_war_lost = {
 	events = {
 		civil_war.3
 		civil_war.6
+		flavor_egy.11
+		me_syracuse_1_democracy.29
 		ip_republic.88
 	}
 }
@@ -272,10 +291,19 @@ on_civil_war_won = {
 			}
 			change_country_adjective = "roman"
 		}
+		if = {
+			limit = {
+				current_ruler = { has_variable = me_syr_current_tyrant_flag }
+				NOT = { tag = SYR }
+			}
+			change_country_tag = SYR
+		}
 	}
 	events = {
 		civil_war.1
 		civil_war.5
+		flavor_egy.10
+		me_syracuse_1_democracy.28
 		ip_republic.87
 		dhe_iberia.5
 		me_roman_9_eastern_glory.6
@@ -323,7 +351,6 @@ on_character_death = {
 		}
 		if = {
 			limit = {
-				this = char:70
 				is_ruler = no
 				age <= 22
 				NOT = {
@@ -332,6 +359,7 @@ on_character_death = {
 				c:EPI = {
 					has_land = yes
 				}
+				this = char:70
 			}
 			c:EPI = {
 				trigger_event = {
@@ -445,61 +473,9 @@ on_character_death = {
 		if = {
 			limit = {
 				num_holdings_owned > 0
+				exists = next_in_family
 			}
-			if = {
-				limit = {
-					is_head_of_family = no
-					exists = head_of_family
-					head_of_family = {
-						num_holdings_owned < max_holdings_owned
-					}
-				}
-				head_of_family = {
-					save_scope_as = holding_target
-				}
-			}
-			else_if = {
-				limit = {
-					num_of_children > 0
-					any_child = {
-						trigger_if = {
-							limit = {
-								employer = {
-									gender_equality = no
-								}
-							}
-							is_male = yes
-						}
-						employer = root.employer
-						num_holdings_owned < max_holdings_owned
-					}
-				}
-				ordered_child = {
-					limit = {
-						trigger_if = {
-							limit = {
-								employer = {
-									gender_equality = no
-								}
-							}
-							is_male = yes
-						}
-						employer = root.employer
-						num_holdings_owned < max_holdings_owned
-					}
-					order_by = age
-					position = 0
-					save_scope_as = holding_target
-				}
-			}
-			else_if = {
-				limit = {
-					exists = next_in_family
-					next_in_family = {
-						employer = root.employer
-						num_holdings_owned < max_holdings_owned
-					}
-				}
+			next_in_family = {
 				save_scope_as = holding_target
 			}
 			if = {
@@ -507,59 +483,7 @@ on_character_death = {
 					exists = scope:holding_target
 				}
 				while = {
-					count = 4
 					limit = {
-						scope:holding_target = {
-							num_holdings_owned < max_holdings_owned
-						}
-						num_holdings_owned > 0
-					}
-					random_holdings = {
-						save_scope_as = holding_transfer
-					}
-					remove_holding = scope:holding_transfer
-					scope:holding_target = {
-						add_holding = scope:holding_transfer
-					}
-				}
-			}
-			while = {
-				limit = {
-					num_holdings_owned > 0
-					num_of_children > 0
-					any_child = {
-						trigger_if = {
-							limit = {
-								employer = {
-									gender_equality = no
-								}
-							}
-							is_male = yes
-						}
-						employer = root.employer
-						num_holdings_owned < max_holdings_owned
-					}
-				}
-				random_child = {
-					limit = {
-						trigger_if = {
-							limit = {
-								employer = {
-									gender_equality = no
-								}
-							}
-							is_male = yes
-						}
-						employer = root.employer
-						num_holdings_owned < max_holdings_owned
-					}
-					save_scope_as = holding_target
-				}
-				while = {
-					limit = {
-						scope:holding_target = {
-							num_holdings_owned < max_holdings_owned
-						}
 						num_holdings_owned > 0
 					}
 					random_holdings = {
@@ -607,6 +531,118 @@ on_character_death = {
 				}
 			}
 		}
+		if = {
+			limit = { has_variable = me_syr_democracy_leader }
+			remove_variable = me_syr_democracy_leader
+			clear_saved_scope = democracy_leader
+			save_scope_as = old_democracy_leader
+			employer = {
+				trigger_event = { id = me_syracuse_1_democracy.2 }
+			}
+		}
+		if = {
+			limit = { has_variable = me_syr_current_tyrant_flag }
+			remove_variable = me_syr_current_tyrant_flag
+			save_scope_as = syracuse_old_tyrant
+			employer = {
+				trigger_event = {
+					id = me_syracuse_1_democracy.3
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = { has_variable = me_syr_foreign_leader_flag }
+			remove_variable = me_syr_foreign_leader_flag
+			save_scope_as = me_syracuse_old_foreign_request_character_scope
+			if = {
+				limit = {
+					any_country = { has_variable = me_syr_foreign_country_flag }
+				}
+				random_country = {
+					limit = { has_variable = me_syr_foreign_country_flag }
+					save_scope_as = me_syracuse_foreign_request_scope
+				}
+				scope:me_syracuse_foreign_request_scope = {
+					trigger_event = { id = me_syracuse_1_democracy.12 }
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_variable = me_syr_heir_flag
+				c:SYR = { has_variable = death_to_tyrants_flag }
+				employer = {
+					tag = SYR
+					OR = {
+						var:ongoing_revolutionary_route = 6
+						AND = {
+							has_completed_mission_task = syracuse_1_6_approach_heir
+							NOT = { has_completed_mission_task = syracuse_1_7_assassinate }
+						}
+					}
+				}
+			}
+			remove_variable = me_syr_heir_flag
+			save_scope_as = me_syr_heir_scope
+			c:SYR = {
+				trigger_event = { id = me_syracuse_1_democracy.73 }
+			}
+		}
+		if = {
+			limit = { 
+				has_variable = gm_family_head_1_flag
+			}
+			save_scope_as = gm_old_family_head
+			remove_variable = gm_family_head_1_flag
+			if = {
+				limit = { 
+					employer = { has_variable = gm_1_greek_country_flag }
+				}
+				employer = {
+					trigger_event = { id = me_greek_1_black_sea.13 }
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_variable = gm_family_head_3_flag
+			}
+			save_scope_as = gm_old_family_head
+			remove_variable = gm_family_head_3_flag
+			if = {
+				limit = { 
+					employer = { has_variable = gm_3_greek_country_flag }
+				}
+				employer = {
+					trigger_event = { id = me_greek_3_italiote.26 }
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_variable = gm_family_head_4_flag
+			}
+			save_scope_as = gm_old_family_head
+			remove_variable = gm_family_head_4_flag
+			if = {
+				limit = { 
+					employer = { has_variable = gm_4_greek_country_flag }
+				}
+				employer = {
+					trigger_event = { id = me_greek_4_west.3 }
+				}
+			}
+		}
+		if = {
+			limit = { has_variable = archimedes_flag }
+			if = {
+				limit = { 
+					employer = { has_country_modifier = archimedes_modifier }
+				}
+				remove_country_modifier = archimedes_modifier
+			}
+		}
 	}
 	events = {
 		olympic.10 #inform patron country of athlete death
@@ -622,6 +658,10 @@ on_character_created = {
 	events = {
 		character_events.49 # Baldness
 	}
+}
+
+on_deified_ruler_death = {
+
 }
 
 on_tenth_birthday = {
@@ -839,12 +879,134 @@ on_being_captured = {
 	}
 }
 
+on_being_ransomed_back = {
+	effect = {
+		remove_character_modifier = foreign_citizen
+	}
+}
+
+on_being_released = {
+
+}
+
 on_enacting_omen = {
+}
+
+on_change_of_deity = {
+}
+
+on_change_pantheon = {
 }
 
 on_being_imprisoned = {
 	effect = {
 		clear_ambition_effect = yes
+		if = {
+			limit = { has_variable = me_syr_democracy_leader }
+			remove_variable = me_syr_democracy_leader
+			clear_saved_scope = democracy_leader
+			save_scope_as = old_democracy_leader
+			employer = {
+				trigger_event = { id = me_syracuse_1_democracy.2 }
+			}
+		}
+		if = {
+			limit = { 
+				has_variable = me_syr_foreign_leader_flag
+				c:SYR = { has_variable = death_to_tyrants_flag }
+			}
+			remove_variable = me_syr_foreign_leader_flag
+			save_scope_as = me_syracuse_old_foreign_request_character_scope
+			if = {
+				limit = {
+					employer = {
+						NOT = { tag = SYR }
+					}
+				}
+				employer = {
+					trigger_event = {
+						id = me_syracuse_1_democracy.12
+						days = 3
+					}
+				}
+			}
+			if = {
+				limit = { has_character_modifier = indisposed_charmod }
+				hidden_effect = { remove_character_modifier = indisposed_charmod }
+			}
+			c:SYR = {
+				trigger_event = {
+					id = me_syracuse_1_democracy.12
+					days = 3
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_variable = me_syr_heir_flag
+				c:SYR = { has_variable = death_to_tyrants_flag }
+				employer = {
+					tag = SYR
+					OR = {
+						var:ongoing_revolutionary_route = 6
+						AND = {
+							has_completed_mission_task = syracuse_1_6_approach_heir
+							NOT = { has_completed_mission_task = syracuse_1_7_assassinate }
+						}
+					}
+				}
+			}
+			remove_variable = me_syr_heir_flag
+			save_scope_as = me_syr_heir_scope
+			c:SYR = {
+				trigger_event = { id = me_syracuse_1_democracy.73 }
+			}
+		}
+		if = {
+			limit = { 
+				has_variable = gm_family_head_1_flag
+			}
+			save_scope_as = gm_old_family_head
+			remove_variable = gm_family_head_1_flag
+			if = {
+				limit = { 
+					employer = { has_variable = gm_1_greek_country_flag }
+				}
+				employer = {
+					trigger_event = { id = me_greek_1_black_sea.13 }
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_variable = gm_family_head_3_flag
+			}
+			save_scope_as = gm_old_family_head
+			remove_variable = gm_family_head_3_flag
+			if = {
+				limit = { 
+					employer = { has_variable = gm_3_greek_country_flag }
+				}
+				employer = {
+					trigger_event = { id = me_greek_3_italiote.26 }
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_variable = gm_family_head_4_flag
+			}
+			save_scope_as = gm_old_family_head
+			remove_variable = gm_family_head_4_flag
+			if = {
+				limit = { 
+					employer = { has_variable = gm_4_greek_country_flag }
+				}
+				employer = {
+					trigger_event = { id = me_greek_4_west.3 }
+				}
+			}
+		}
 	}
 	events = {
 		character_events.17
@@ -856,6 +1018,7 @@ on_move_country = { #scope:old_country is the origin country
 		befriend_removal_effect = yes
 		clear_befriending_var_effect = yes
 		clear_ambition_effect = yes
+		clear_loyalty_effect = yes
 		if = {
 			limit  = {
 				has_character_modifier = inspire_disloyalty_modifier
@@ -925,16 +1088,13 @@ on_move_country = { #scope:old_country is the origin country
 		}
 		if = {
 			limit = {
-				has_character_modifier = senatorial_commander_ip_47
-			}
-			remove_character_modifier = senatorial_commander_ip_47
-		}
-		if = {
-			limit = {
 				num_holdings_owned > 0
 				NOR = {
 					has_trait = olympic_competitor
 					employer = c:MER
+				}
+				employer = {
+					has_civil_war = no
 				}
 			}
 			every_holdings = {
@@ -967,6 +1127,98 @@ on_move_country = { #scope:old_country is the origin country
 				}
 			}
 		}
+		if = {
+			limit = { 
+				has_variable = me_syr_democracy_leader
+				employer = {
+					NOT = { has_variable = me_syr_demo_civil_war_active }
+				}
+			}
+			remove_variable = me_syr_democracy_leader
+			clear_saved_scope = democracy_leader
+			save_scope_as = old_democracy_leader
+			employer = {
+				trigger_event = { id = me_syracuse_1_democracy.2 }
+			}
+		}
+		if = {
+			limit = { 
+				has_variable = me_syr_heir_flag
+				c:SYR = { 
+					has_variable = death_to_tyrants_flag
+					NOR = {
+						has_variable = me_syr_demo_civil_war_active 
+						has_civil_war = yes
+					}
+					OR = {
+						var:ongoing_revolutionary_route = 6
+						AND = {
+							has_completed_mission_task = syracuse_1_6_approach_heir
+							NOT = { has_completed_mission_task = syracuse_1_7_assassinate }
+						}
+					}
+				}
+			}
+			remove_variable = me_syr_heir_flag
+			save_scope_as = me_syr_heir_scope
+			c:SYR  = {
+				trigger_event = { id = me_syracuse_1_democracy.73 }
+			}
+		}
+		if = {
+			limit = { 
+				has_variable = gm_family_head_1_flag
+			}
+			save_scope_as = gm_old_family_head
+			remove_variable = gm_family_head_1_flag
+			if = {
+				limit = { 
+					var:came_from = { has_variable = gm_1_greek_country_flag }
+				}
+				var:came_from = {
+					trigger_event = { id = me_greek_1_black_sea.13 }
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_variable = gm_family_head_3_flag
+			}
+			save_scope_as = gm_old_family_head
+			remove_variable = gm_family_head_3_flag
+			if = {
+				limit = { 
+					var:came_from = { has_variable = gm_3_greek_country_flag }
+				}
+				var:came_from = {
+					trigger_event = { id = me_greek_3_italiote.26 }
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_variable = gm_family_head_4_flag
+			}
+			save_scope_as = gm_old_family_head
+			remove_variable = gm_family_head_4_flag
+			if = {
+				limit = { 
+					var:came_from = { has_variable = gm_4_greek_country_flag }
+				}
+				var:came_from = {
+					trigger_event = { id = me_greek_4_west.3 }
+				}
+			}
+		}
+		if = {
+			limit = { has_variable = archimedes_flag }
+			if = {
+				limit = { 
+					scope:old_country = { has_country_modifier = archimedes_modifier }
+				}
+				scope:old_country = { remove_country_modifier = archimedes_modifier }
+			}
+		}
 	}
 	events = {
 		character_events.4
@@ -976,6 +1228,96 @@ on_move_country = { #scope:old_country is the origin country
 
 on_game_initialized = {
 	effect = {
+		if = {
+			limit = { tag = MAC }
+			char:10 = { #Antipatrid mother
+				move_country = C:PRY
+			}
+		}
+		if = {
+			limit = { tag = MAC }
+			char:97 = { #Mithridates in Phrygia
+				move_country = C:PRY
+			}
+		}
+		### Unique Mechanics ###
+		if = {
+			limit = {
+				tag = ATH
+				has_dlc = "Magna Graecia"
+			}
+			set_variable = {
+				name = ath_unique_mech
+			}
+		}
+		if = {
+			limit = {
+				tag = SPA
+				has_dlc = "Magna Graecia"
+			}
+			set_variable = {
+				name = spa_unique_mech
+			}	
+		}
+		if = {
+			limit = {
+				tag = SYR
+				has_dlc = "Magna Graecia"
+			}
+			set_variable = {
+				name = syr_unique_mech	
+			}
+		}
+		if = {
+			limit = {
+				tag = EPI
+				has_dlc = "Epirus Flavor Pack"
+			}
+			set_variable = {
+				name = epi_unique_mech
+			}
+		}
+		### Unique Deities ###
+		if = {
+			limit = {
+				tag = LOC
+			}
+			set_variable = {
+				name = loc_unique_deity
+			}
+		}
+		if = {
+			limit = {
+				tag = BOE
+			}
+			set_variable = {
+				name = boe_unique_deity
+			}
+		}
+		if = {
+			limit = {
+				tag = CAR
+			}
+			set_variable = {
+				name = car_unique_deity
+			}
+		}
+		if = {
+			limit = {
+				tag = NMI
+			}
+			set_variable = {
+				name = nmi_unique_deity
+			}
+		}
+		if = {
+			limit = {
+				tag = AED
+			}
+			set_variable = {
+				name = aed_unique_deity
+			}
+		}
 		if = {
 			limit = { tag = PRY }
 			current_ruler = {
@@ -1023,12 +1365,36 @@ on_game_initialized = {
 				add_rival = C:PRY.current_ruler
 				add_friend = C:EGY.current_ruler
 			}
+			trigger_event = { id = country_rename.2 } 
+		}
+		if = {
+			limit = { tag = EPI }
+			current_ruler = {
+				add_friend = c:TLN.current_ruler # Pyrrhos and Glaukias
+			}
+		}
+		if = {
+			limit = { tag = TLN }
+			current_ruler = {
+				add_rival = c:MAC.current_ruler # Glaukias and Kassandros
+			}
 		}
 		if = {
 			limit = { tag = SYR }
+			set_variable = me_syracuse_start_flag
 			random_navy = {
 				add_subunit = octere
 				add_subunit = octere
+			}
+			current_ruler = { 
+				add_friend = char:319
+				add_friend = char:264 
+			}
+			p:84 = {
+				trigger_event = {
+					id = flavor_syr.1
+					days = { 13505 15695 } # 37 - 43 years
+				}
 			}
 		}
 		if = {
@@ -1059,6 +1425,191 @@ on_game_initialized = {
 				target = c:SPA
 			}
 		}
+		if = {
+			limit = {
+				OR = {
+					rank = local_power
+					rank = regional_power
+					rank = major_power
+					rank = great_power
+				}
+				num_of_cities > 15
+			}
+			every_family = {
+				ROOT = {
+					random_owned_province = {
+						limit = {
+							is_capital = no
+							NOT = {
+								exists = holding_owner
+							}
+						}
+						save_scope_as = first_holding
+						weight = {
+							modifier = {
+								factor = 100000
+								any_neighbor_province = {
+									NOT = { exists = holding_owner }
+								}
+							}
+						}
+					}
+				}
+				head_of_family = {
+					add_holding = scope:first_holding
+				}
+			}
+		}
+		
+		#More for the bigger tags!
+		
+		if = {
+			limit = {
+				rank = regional_power
+			}
+			every_family = {
+				head_of_family = { save_scope_as = hof }
+				while = {
+					count = 3
+					ROOT = {
+						random_owned_province = {
+							limit = {
+								is_capital = no
+								OR = {
+									NOT = {
+										exists = holding_owner
+									}
+									AND = {
+										exists = holding_owner
+										holding_owner = {
+											is_alive = no
+										}
+									}
+								}
+							}
+							weight = {
+								modifier = {
+									factor = 10000
+									any_neighbor_province = {
+										trigger_if = {
+											limit = {
+												exists = holding_owner
+											}
+											holding_owner = scope:hof
+										}
+										trigger_else = {
+											always = no
+										}
+									}
+								}
+							}
+							save_scope_as = buy_holding_target
+						}
+					}
+					head_of_family = {
+						add_holding = scope:buy_holding_target
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				rank = major_power
+			}
+			every_family = {
+				head_of_family = { save_scope_as = hof }
+				while = {
+					count = 10
+					ROOT = {
+						random_owned_province = {
+							limit = {
+								is_capital = no
+								OR = {
+									NOT = {
+										exists = holding_owner
+									}
+									AND = {
+										exists = holding_owner
+										holding_owner = {
+											is_alive = no
+										}
+									}
+								}
+							}
+							weight = {
+								modifier = {
+									factor = 10000
+									any_neighbor_province = {
+										trigger_if = {
+											limit = {
+												exists = holding_owner
+											}
+											holding_owner = scope:hof
+										}
+										trigger_else = {
+											always = no
+										}
+									}
+								}
+							}
+							save_scope_as = buy_holding_target
+						}
+					}
+					head_of_family = {
+						add_holding = scope:buy_holding_target
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				rank = great_power
+			}
+			every_family = {
+				head_of_family = { save_scope_as = hof }
+				while = {
+					count = 20
+					ROOT = {
+						random_owned_province = {
+							limit = {
+								is_capital = no
+								OR = {
+									NOT = {
+										exists = holding_owner
+									}
+									AND = {
+										exists = holding_owner
+										holding_owner = {
+											is_alive = no
+										}
+									}
+								}
+							}
+							weight = {
+								modifier = {
+									factor = 10000
+									any_neighbor_province = {
+										trigger_if = {
+											limit = {
+												exists = holding_owner
+											}
+											holding_owner = scope:hof
+										}
+										trigger_else = {
+											always = no
+										}
+									}
+								}
+							}
+							save_scope_as = buy_holding_target
+						}
+					}
+					head_of_family = {
+						add_holding = scope:buy_holding_target
+					}
+				}
+			}
+		}
 	}
 	events = {
 		syr_flavour.1
@@ -1069,6 +1620,7 @@ on_game_initialized = {
 		flavor_epi.5
 		dhe_body.4
 		dhe_dde_pyrrhus.24
+		flavor_egy.8
 		dhe_mithridates.1
 		dhe_heraclea_pontica.1
 	}
@@ -1124,6 +1676,53 @@ on_ownership_change = { #province scope
 				id = me_roman_1_roman_italia.26
 			}
 		}
+		if = {
+			limit = {
+				exists = holding_owner
+			}
+			holding_owner = {
+				remove_holding = root
+			}
+		}
+		if = {
+			limit = { has_variable = sm_rebel_base }
+			save_scope_as = sm_old_base
+			remove_variable = sm_rebel_base
+			if = {
+				limit = {
+					c:SYR = { has_land = yes }
+				}
+				c:SYR = {
+					trigger_event = { id = me_syracuse_1_democracy.21 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_in_list = {
+					list = gm_1_hellenic_liberation_list
+					this = root
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							has_owner = yes
+							owner = {
+								country_culture_group = hellenic
+							}
+						}
+						has_owner = no
+					}
+				}
+				remove_from_list = gm_1_hellenic_liberation_list
+			}
+			if = {
+				limit = { has_variable = gm_1_bartered_flag }
+				remove_variable = gm_1_bartered_flag
+			}
+		}
 	}
 	events = {
 		dhe_city_fall.1
@@ -1156,6 +1755,32 @@ on_ownership_change = { #province scope
 }
 
 on_province_occupied = { #province scope, it will fire AS WELL as on_siege_won
+	effect = {
+		if = {
+			limit = {
+				this = p:3256
+				this = c:CAR.capital_scope
+				exists = scope:me_syracuse_scope
+				controller = scope:me_syracuse_scope
+				OR = {
+					controller = scope:gm_2_greek_scope
+					controller = { is_subject_of = scope:me_syracuse_scope }
+				}
+			}
+			scope:me_syracuse_scope = { set_variable = syr_occupied_carthage_flag }
+		}
+		if = {
+			limit = {
+				this = p:428
+				exists = scope:gm_2_greek_scope
+				OR = {
+					controller = scope:gm_2_greek_scope
+					controller = { is_subject_of = scope:gm_2_greek_scope }
+				}
+			}
+			scope:gm_2_greek_scope = { set_variable = me_gre_2_14_flag }
+		}
+	}
 	events = {
 		fire_events.1
 		slave_revolts.2 #Interactive Looting
@@ -1323,6 +1948,27 @@ on_battle_lost_country = { #root = country scope of the main unit on the losing 
 on_military_annex = {
 	effect = {
 		on_annexation_event_effect = yes
+		every_country_treasure = {
+			add_to_list = annexed_treasures
+		}
+		if = {
+			limit = {
+				OR = {
+					has_variable = me_syr_foreign_country_flag
+					has_variable = me_syr_deal_with_devil_flag
+				}
+			}
+			save_scope_as = me_syr_annexed_scope
+			if = {
+				limit = {
+					any_country = { has_variable = death_to_tyrants_flag }
+				}
+				random_country = {
+					limit = { has_variable = death_to_tyrants_flag }
+					trigger_event = { id = me_syracuse_1_democracy.60 }
+				}
+			}
+		}
 	}
 }
 
@@ -1469,6 +2115,9 @@ character_story_events =
 		1 = dhe_isis_cult.12
 		1 = dhe_isis_cult.13
 		1 = dhe_isis_cult.14
+		# Eleusinian Mysteries
+		1 = me_athens_02_attica.16
+		# Other
 		3 = character_events.14
 		200 = character_events.18
 		1 = ip_monarchy.21
@@ -1564,6 +2213,11 @@ on_subject_defect = { #scope:future_overlord = country that stole vassal, scope:
 		add_opinion = {
 			modifier = stole_a_vassal_from_us
 			target = scope:future_overlord
+		}
+		
+		add_opinion = {
+			modifier = free_from_old_overlord
+			target = scope:target_subject
 		}
 	}
 }

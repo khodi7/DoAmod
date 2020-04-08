@@ -1,7 +1,8 @@
 name="Death of Alexander"
-supported_version="1.41"
 description=""
 tags={
 	"Overhaul"
 }
-path="mod/DoAmod-master"
+supported_version="1.41"
+path="C:/Users/LetMeThink/Documents/Paradox Interactive/Imperator/mod/DoAmod"
+remote_file_id="2053024466"

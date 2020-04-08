@@ -8324,7 +8324,7 @@ country = {
 				{ deity = 117 }
 			}
 
-			treasures = { 102 108 }
+			treasures = { 102 188 }
 		
 			own_control_core =  {
 			896 898 899 911 912 913 914 916 924 926 927 933 934 938 940 941 942 943 944 961 962 964 965 969 971 973
@@ -10846,7 +10846,7 @@ country = {
 		
 	
 		KSH = {
-			family=72
+			family = 72
 			government = despotic_monarchy
 			primary_culture = meroitic
 			religion = egyptian_pantheon
