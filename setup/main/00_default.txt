@@ -8278,7 +8278,7 @@ country = {
 		PON = {
 			government = tribal_kingdom
 			primary_culture = pontic
-			religion = anatolian_religion
+			religion = roman_pantheon
 		
 			capital = 1819
 			
@@ -10893,7 +10893,7 @@ country = {
 			capital = 7528
 		
 			own_control_core =  {
-			7528
+			7528 7530
 			}
 		}
 		
