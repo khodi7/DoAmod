@@ -1635,6 +1635,8 @@
 	tribesmen={
 		amount=4
 	}
+	
+	holy_site = omen_zeus_stratios
 }
 
 1814={ #Stephane
@@ -1711,6 +1713,7 @@
 	slaves={
 		amount=5
 	}
+	holy_site = omen_selene
 }
 
 1821={ #Phazemoniton

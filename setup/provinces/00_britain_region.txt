@@ -167,6 +167,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_sulis
 }
 
 2009={ #Aquae Sulis
@@ -621,6 +622,7 @@
 	tribesmen={
 		amount=8
 	}
+	holy_site = omen_andraste
 }
 
 2033={ #Garrianonum
@@ -1094,6 +1096,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_nodens
 }
 
 2062={ #Vernemetum
@@ -1455,6 +1458,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_belatucadros
 }
 
 2084={ #Brocavum
@@ -1490,6 +1494,7 @@
 	tribesmen={
 		amount=2
 	}
+	holy_site = omen_coventina
 }
 
 2087={ #Vindolava

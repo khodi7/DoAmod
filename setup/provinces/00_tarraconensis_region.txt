@@ -1104,6 +1104,7 @@
 	tribesmen={
 		amount=4
 	}
+	holy_site = omen_mari
 }
 
 1099={ #Gebala

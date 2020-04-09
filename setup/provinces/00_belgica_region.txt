@@ -127,6 +127,7 @@
 	tribesmen={
 		amount=5
 	}
+	holy_site = omen_intarabus
 }
 
 2468={ #Caracotinum
@@ -962,6 +963,7 @@
 	tribesmen={
 		amount=4
 	}
+	holy_site = omen_ancamna
 }
 
 3684={ #Nasagus
@@ -1080,6 +1082,7 @@
 	tribesmen={
 		amount=3
 	}
+	holy_site = omen_lenus
 }
 
 3703={ #Remia
@@ -1096,6 +1099,7 @@
 	tribesmen={
 		amount=4
 	}
+	holy_site = omen_camulus
 }
 
 3704={ #Nervia Prima

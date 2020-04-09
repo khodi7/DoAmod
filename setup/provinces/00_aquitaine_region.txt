@@ -748,6 +748,7 @@
 	tribesmen={
 		amount=4
 	}
+	holy_site = omen_eki
 }
 
 2289={ #Lucaniacum

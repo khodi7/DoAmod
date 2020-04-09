@@ -416,6 +416,7 @@
 	tribesmen={
 		amount=5
 	}
+	holy_site = omen_nemetona
 }
 
 3054={ #Tabernae
