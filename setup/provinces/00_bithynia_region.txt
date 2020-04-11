@@ -1620,6 +1620,7 @@
 	barbarian_power=0
 	province_rank="city"
 	citizen={
+		culture="pontic"
 		amount=2
 	}
 	citizen={
@@ -1634,7 +1635,6 @@
 	tribesmen={
 		amount=4
 	}
-	
 	holy_site = omen_zeus_stratios
 }
 
