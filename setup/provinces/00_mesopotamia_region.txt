@@ -126,7 +126,7 @@
 835={ #Hatra
 	terrain="desert"
 	culture="qedarite"
-	religion="arabian_pantheon"
+	religion="mesopotamian_religion"
 	trade_goods="horses"
 	civilization_value=40
 	barbarian_power=0
@@ -268,7 +268,7 @@
 891={ #Birtha
 	terrain="plains"
 	culture="qedarite"
-	religion="arabian_pantheon"
+	religion="mesopotamian_religion"
 	trade_goods="wild_game"
 	civilization_value=40
 	barbarian_power=0
@@ -1441,7 +1441,7 @@
 956={ #Ajri
 	terrain="desert"
 	culture="qedarite"
-	religion="arabian_pantheon"
+	religion="mesopotamian_religion"
 	trade_goods="wild_game"
 	civilization_value=40
 	barbarian_power=0
